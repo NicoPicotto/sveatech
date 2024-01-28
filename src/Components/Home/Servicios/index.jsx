@@ -1,7 +1,5 @@
 import Section from '../../Section/Section';
 import {
-	Grid,
-	GridItem,
 	Heading,
 	List,
 	ListItem,
@@ -60,6 +58,7 @@ const Servicios = () => {
 						borderRadius={8}
 						direction='row'
 						gap={0}
+						height='100%'
 						overflow='hidden'
 						bgColor='azul-2'
 					>
@@ -130,6 +129,7 @@ const Servicios = () => {
 						borderRadius={8}
 						direction='row'
 						gap={0}
+						height='100%'
 						overflow='hidden'
 						bgColor='azul-2'
 					>
@@ -188,6 +188,7 @@ const Servicios = () => {
 						borderRadius={8}
 						direction='row'
 						gap={0}
+						height='100%'
 						overflow='hidden'
 						bgColor='azul-2'
 					>
@@ -248,6 +249,7 @@ const Servicios = () => {
 						borderRadius={8}
 						direction='row'
 						gap={0}
+						height='100%'
 						overflow='hidden'
 						bgColor='azul-2'
 					>
@@ -318,6 +320,7 @@ const Servicios = () => {
 						borderRadius={8}
 						direction='row'
 						gap={0}
+						height='100%'
 						overflow='hidden'
 						bgColor='azul-2'
 					>
