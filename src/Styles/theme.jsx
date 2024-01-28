@@ -10,7 +10,7 @@ const colors = {
 
 const fonts = {
 	body: `'Noto Sans TC Variable', sans-serif;`,
-	heading: `'Noto Sans TC Variable', sans-serif;`,
+	heading: `'Paytone One', sans-serif`,
 };
 
 const styles = {

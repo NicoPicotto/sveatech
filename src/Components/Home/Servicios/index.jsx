@@ -25,15 +25,11 @@ import { ArrowRightIcon, CheckCircleIcon } from '@heroicons/react/24/solid';
 const Servicios = () => {
 	return (
 		<Section paddingBlock='7em'>
-			<Heading mb='1em' textAlign='center'>
+			<Heading mb='1em' textAlign='center' size="2xl" fontWeight="regular" letterSpacing={1}>
 				<Highlight
 					query={['excelencia', 'a medida']}
 					styles={{
-						color: 'natural',
-						textDecor: 'underline',
-						textUnderlineOffset: 5,
-						textDecorationThickness: 2,
-						textDecorationColor: 'amarillo',
+						color: 'amarillo',
 					}}
 				>
 					Servicios de excelencia y a medida.
@@ -69,7 +65,7 @@ const Servicios = () => {
 							w='60%'
 							gap={5}
 						>
-							<Heading fontSize='4xl' as='h3' color='amarillo'>
+							<Heading fontSize='4xl' as='h3' color='amarillo' fontWeight="regular" letterSpacing={1}>
 								Networking y Conectividad
 							</Heading>
 							<List spacing={5} flex={1}>
@@ -140,7 +136,7 @@ const Servicios = () => {
 							w='60%'
 							gap={5}
 						>
-							<Heading fontSize='4xl' as='h3' color='amarillo'>
+							<Heading fontSize='4xl' as='h3' color='amarillo' fontWeight="regular" letterSpacing={1}>
 								Telefonía IP y Comunicaciones Unificadas
 							</Heading>
 							<List spacing={5} flex={1}>
@@ -199,7 +195,7 @@ const Servicios = () => {
 							w='60%'
 							gap={5}
 						>
-							<Heading fontSize='4xl' as='h3' color='amarillo'>
+							<Heading fontSize='4xl' as='h3' color='amarillo' fontWeight="regular" letterSpacing={1}>
 								Soluciones de Omnicanalidad
 							</Heading>
 							<List spacing={5} flex={1}>
@@ -260,7 +256,7 @@ const Servicios = () => {
 							w='60%'
 							gap={5}
 						>
-							<Heading fontSize='4xl' as='h3' color='amarillo'>
+							<Heading fontSize='4xl' as='h3' color='amarillo' fontWeight="regular" letterSpacing={1}>
 								Cyberseguridad
 							</Heading>
 							<List spacing={5} flex={1}>
@@ -331,7 +327,7 @@ const Servicios = () => {
 							w='60%'
 							gap={5}
 						>
-							<Heading fontSize='4xl' as='h3' color='amarillo'>
+							<Heading fontSize='4xl' as='h3' color='amarillo' fontWeight="regular" letterSpacing={1}>
 								Infraestructura IT
 							</Heading>
 							<List spacing={5} flex={1}>

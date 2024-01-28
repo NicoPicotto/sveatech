@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource-variable/noto-sans-tc": "^5.0.4",
     "@fontsource/black-han-sans": "^5.0.17",
+    "@fontsource/paytone-one": "^5.0.18",
     "@fontsource/titan-one": "^5.0.18",
     "@heroicons/react": "^2.1.1",
     "framer-motion": "^11.0.3",

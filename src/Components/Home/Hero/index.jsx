@@ -20,7 +20,7 @@ const Hero = () => {
 				marginBlock='6em'
 			>
 				<Stack w='50%' paddingInline='3em' gap={5}>
-					<Heading maxW='20ch' as='h1' size='2xl' fontWeight="black">
+					<Heading maxW='20ch' as='h1' size='2xl' fontWeight="regular" letterSpacing={1}>
 						<Highlight
 							query={['Innovación', 'eficiencia', 'tu mano']}
 							styles={{ color: 'amarillo' }}

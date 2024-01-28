@@ -14,15 +14,11 @@ import data from './data';
 const Valores = () => {
 	return (
 		<Section bgColor='azul-2' paddingBlock='7em'>
-			<Heading mb='1em' textAlign='center'>
+			<Heading mb='1em' textAlign='center' size='2xl' fontWeight="regular" letterSpacing={1}>
 				<Highlight
 					query='valores'
 					styles={{
-						color: 'natural',
-						textDecor: 'underline',
-						textUnderlineOffset: 5,
-						textDecorationThickness: 2,
-						textDecorationColor: 'amarillo',
+						color: 'amarillo',
 					}}
 				>
 					Los valores que nos definen.
