@@ -66,8 +66,8 @@ const Servicios = () => {
 						bgColor='azul-2'
 					>
 						<Stack
-							paddingBlock='1.5em'
-							paddingInline='2em'
+							paddingBlock='2em'
+							paddingInline="2.5em"
 							h='100%'
 							w='60%'
 							gap={5}
@@ -121,7 +121,7 @@ const Servicios = () => {
 								w='fit-content'
 								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 							>
-								Me interesa
+								Ver más
 							</Button>
 						</Stack>
 						<Stack position='relative' w='40%' overflow='hidden'>
@@ -144,8 +144,8 @@ const Servicios = () => {
 						bgColor='azul-2'
 					>
 						<Stack
-							paddingBlock='1.5em'
-							paddingInline='2em'
+							paddingBlock='2em'
+							paddingInline="2.5em"
 							h='100%'
 							w='60%'
 							gap={5}
@@ -187,7 +187,7 @@ const Servicios = () => {
 								w='fit-content'
 								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 							>
-								Me interesa
+								Ver más
 							</Button>
 						</Stack>
 						<Stack position='relative' w='40%' overflow='hidden'>
@@ -209,8 +209,8 @@ const Servicios = () => {
 						bgColor='azul-2'
 					>
 						<Stack
-							paddingBlock='1.5em'
-							paddingInline='2em'
+							paddingBlock='2em'
+							paddingInline="2.5em"
 							h='100%'
 							w='60%'
 							gap={5}
@@ -254,7 +254,7 @@ const Servicios = () => {
 								w='fit-content'
 								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 							>
-								Me interesa
+								Ver más
 							</Button>
 						</Stack>
 						<Stack position='relative' w='40%' overflow='hidden'>
@@ -276,8 +276,8 @@ const Servicios = () => {
 						bgColor='azul-2'
 					>
 						<Stack
-							paddingBlock='1.5em'
-							paddingInline='2em'
+							paddingBlock='2em'
+							paddingInline="2.5em"
 							h='100%'
 							w='60%'
 							gap={5}
@@ -331,7 +331,7 @@ const Servicios = () => {
 								w='fit-content'
 								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 							>
-								Me interesa
+								Ver más
 							</Button>
 						</Stack>
 						<Stack position='relative' w='40%' overflow='hidden'>
@@ -353,8 +353,8 @@ const Servicios = () => {
 						bgColor='azul-2'
 					>
 						<Stack
-							paddingBlock='1.5em'
-							paddingInline='2em'
+							paddingBlock='2em'
+							paddingInline="2.5em"
 							h='100%'
 							w='60%'
 							gap={5}
@@ -405,7 +405,7 @@ const Servicios = () => {
 								w='fit-content'
 								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 							>
-								Me interesa
+								Ver más
 							</Button>
 						</Stack>
 						<Stack position='relative' w='40%' overflow='hidden'>
@@ -427,8 +427,8 @@ const Servicios = () => {
 						bgColor='azul-2'
 					>
 						<Stack
-							paddingBlock='1.5em'
-							paddingInline='2em'
+							paddingBlock='2em'
+							paddingInline="2.5em"
 							h='100%'
 							w='60%'
 							gap={5}
@@ -478,7 +478,7 @@ const Servicios = () => {
 								w='fit-content'
 								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 							>
-								Me interesa
+								Ver más
 							</Button>
 						</Stack>
 						<Stack position='relative' w='40%' overflow='hidden'>

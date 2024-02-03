@@ -11,16 +11,15 @@ import Section from '../../Section/Section';
 
 const Hero = () => {
 	return (
-		<Section >
-			<HStack bgColor='azul-2' borderRadius={8} justify='space-between'>
+		<Section>
+			<HStack
+				bgColor='azul-2'
+				borderRadius={8}
+				justify='space-between'
+				h='60vh'
+			>
 				<Stack w='50%' paddingInline='3em' gap={5}>
-					<Heading
-						maxW='20ch'
-						as='h1'
-						size='2xl'
-						fontWeight='regular'
-						letterSpacing={1}
-					>
+					<Heading as='h1' size='2xl' fontWeight='regular' letterSpacing={1}>
 						<Highlight
 							query={['Innovación', 'eficiencia', 'tu mano']}
 							styles={{ color: 'amarillo' }}
@@ -39,20 +38,23 @@ const Hero = () => {
 				</Stack>
 				<Stack position='relative' w='50%' h='100%'>
 					<Image
-						src='/assets/img/91376.png'
+						src='/assets/img/tablet-2.png'
 						alt='celphone with charts'
 						position='relative'
-						mt='-6em'
-						zIndex={5}
+						mt='-2em'
+						maxW="550px"
+						
+						
 					/>
 					<Image
-						src='/assets/img/91377.png'
+						src='/assets/img/tablet-1.png'
 						alt='celphone with charts'
 						position='absolute'
 						bottom={0}
-						h='100%'
-						left='20%'
-						top='20%'
+						right="5em"
+						maxW="500px"
+						mb="-2em"
+						zIndex={5}
 					/>
 				</Stack>
 			</HStack>
