@@ -13,7 +13,7 @@ import data from './data';
 
 const Valores = () => {
 	return (
-		<Section bgColor='azul-2' paddingBlock='7em'>
+		<Section bgColor='azul-2'>
 			<Heading
 				mb='1em'
 				textAlign='center'

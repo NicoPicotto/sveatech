@@ -24,7 +24,7 @@ import { ArrowRightIcon, CheckCircleIcon } from '@heroicons/react/24/solid';
 
 const Servicios = () => {
 	return (
-		<Section paddingBlock='7em'>
+		<Section>
 			<Heading
 				mb='1em'
 				textAlign='center'

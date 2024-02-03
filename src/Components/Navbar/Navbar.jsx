@@ -3,7 +3,7 @@ import { Link as ReachLink } from 'react-router-dom';
 
 const Navbar = () => {
 	return (
-		<Stack paddingInline='2em' paddingBlock='1.5em' align='center'>
+		<Stack paddingInline='2em' paddingTop='2em' align='center'>
 			<HStack w='100%' maxW='1280px' align='center' justify='space-between'>
 				<Image src='/assets/img/Sveatech.svg' w='185px' />
 				<HStack gap={10}>
