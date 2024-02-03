@@ -43,6 +43,7 @@ const components = {
 			solid: {
 				bg: colors.amarillo,
 				color: colors.fondo,
+				paddingBottom: 1,
 				_hover: {
 					bg: '#deb100',
 				},
@@ -51,6 +52,7 @@ const components = {
 			outline: {
 				border: '1px solid',
 				borderColor: colors.amarillo,
+				paddingBottom: 1,
 				color: colors.natural,
 				_hover: {
 					bg: colors.amarillo,

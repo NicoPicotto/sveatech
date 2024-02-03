@@ -14,7 +14,13 @@ import data from './data';
 const Valores = () => {
 	return (
 		<Section bgColor='azul-2' paddingBlock='7em'>
-			<Heading mb='1em' textAlign='center' size='2xl' fontWeight="regular" letterSpacing={1}>
+			<Heading
+				mb='1em'
+				textAlign='center'
+				size='2xl'
+				fontWeight='regular'
+				letterSpacing={1}
+			>
 				<Highlight
 					query='valores'
 					styles={{
@@ -37,7 +43,7 @@ const Valores = () => {
 							>
 								<HStack>
 									<Image src={item.icon} alt={`Icono valor ${item.titulo}`} />
-									<Heading as='h3' fontSize='2xl'>
+									<Heading as='h3' fontSize='2xl' fontWeight='regular'>
 										{item.titulo}
 									</Heading>
 								</HStack>
