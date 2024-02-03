@@ -25,7 +25,13 @@ import { ArrowRightIcon, CheckCircleIcon } from '@heroicons/react/24/solid';
 const Servicios = () => {
 	return (
 		<Section paddingBlock='7em'>
-			<Heading mb='1em' textAlign='center' size="2xl" fontWeight="regular" letterSpacing={1}>
+			<Heading
+				mb='1em'
+				textAlign='center'
+				size='2xl'
+				fontWeight='regular'
+				letterSpacing={1}
+			>
 				<Highlight
 					query={['excelencia', 'a medida']}
 					styles={{
@@ -40,7 +46,8 @@ const Servicios = () => {
 				slidesPerView={1}
 				loop={true}
 				autoplay={{
-					delay: 2500,
+					delay: 5000,
+					pauseOnMouseEnter: true,
 				}}
 				spaceBetween={5}
 				mousewheel={true}
@@ -65,7 +72,13 @@ const Servicios = () => {
 							w='60%'
 							gap={5}
 						>
-							<Heading fontSize='4xl' as='h3' color='amarillo' fontWeight="regular" letterSpacing={1}>
+							<Heading
+								fontSize='4xl'
+								as='h3'
+								color='amarillo'
+								fontWeight='regular'
+								letterSpacing={1}
+							>
 								Networking y Conectividad
 							</Heading>
 							<List spacing={5} flex={1}>
@@ -115,7 +128,8 @@ const Servicios = () => {
 							<Image
 								objectFit='cover'
 								h='100%'
-								src='/assets/img/conectivity.png'
+								objectPosition="right"
+								src='/assets/img/servicios-lan.png'
 							/>
 						</Stack>
 					</Stack>
@@ -136,7 +150,13 @@ const Servicios = () => {
 							w='60%'
 							gap={5}
 						>
-							<Heading fontSize='4xl' as='h3' color='amarillo' fontWeight="regular" letterSpacing={1}>
+							<Heading
+								fontSize='4xl'
+								as='h3'
+								color='amarillo'
+								fontWeight='regular'
+								letterSpacing={1}
+							>
 								Telefonía IP y Comunicaciones Unificadas
 							</Heading>
 							<List spacing={5} flex={1}>
@@ -174,7 +194,7 @@ const Servicios = () => {
 							<Image
 								objectFit='cover'
 								h='100%'
-								src='/assets/img/conectivity.png'
+								src='/assets/img/servicios-tel.png'
 							/>
 						</Stack>
 					</Stack>
@@ -195,7 +215,13 @@ const Servicios = () => {
 							w='60%'
 							gap={5}
 						>
-							<Heading fontSize='4xl' as='h3' color='amarillo' fontWeight="regular" letterSpacing={1}>
+							<Heading
+								fontSize='4xl'
+								as='h3'
+								color='amarillo'
+								fontWeight='regular'
+								letterSpacing={1}
+							>
 								Soluciones de Omnicanalidad
 							</Heading>
 							<List spacing={5} flex={1}>
@@ -235,7 +261,7 @@ const Servicios = () => {
 							<Image
 								objectFit='cover'
 								h='100%'
-								src='/assets/img/conectivity.png'
+								src='/assets/img/servicios-omni.png'
 							/>
 						</Stack>
 					</Stack>
@@ -256,7 +282,13 @@ const Servicios = () => {
 							w='60%'
 							gap={5}
 						>
-							<Heading fontSize='4xl' as='h3' color='amarillo' fontWeight="regular" letterSpacing={1}>
+							<Heading
+								fontSize='4xl'
+								as='h3'
+								color='amarillo'
+								fontWeight='regular'
+								letterSpacing={1}
+							>
 								Cyberseguridad
 							</Heading>
 							<List spacing={5} flex={1}>
@@ -306,7 +338,7 @@ const Servicios = () => {
 							<Image
 								objectFit='cover'
 								h='100%'
-								src='/assets/img/conectivity.png'
+								src='/assets/img/servicios-cyber.png'
 							/>
 						</Stack>
 					</Stack>
@@ -327,7 +359,13 @@ const Servicios = () => {
 							w='60%'
 							gap={5}
 						>
-							<Heading fontSize='4xl' as='h3' color='amarillo' fontWeight="regular" letterSpacing={1}>
+							<Heading
+								fontSize='4xl'
+								as='h3'
+								color='amarillo'
+								fontWeight='regular'
+								letterSpacing={1}
+							>
 								Infraestructura IT
 							</Heading>
 							<List spacing={5} flex={1}>
@@ -374,7 +412,80 @@ const Servicios = () => {
 							<Image
 								objectFit='cover'
 								h='100%'
-								src='/assets/img/conectivity.png'
+								src='/assets/img/servicios-mantenimiento.png'
+							/>
+						</Stack>
+					</Stack>
+				</SwiperSlide>
+				<SwiperSlide>
+					<Stack
+						borderRadius={8}
+						direction='row'
+						gap={0}
+						height='100%'
+						overflow='hidden'
+						bgColor='azul-2'
+					>
+						<Stack
+							paddingBlock='1.5em'
+							paddingInline='2em'
+							h='100%'
+							w='60%'
+							gap={5}
+						>
+							<Heading
+								fontSize='4xl'
+								as='h3'
+								color='amarillo'
+								fontWeight='regular'
+								letterSpacing={1}
+							>
+								Modernización de Sistemas
+							</Heading>
+							<List spacing={5} flex={1}>
+								<ListItem maxW='70ch' textAlign='justify'>
+									<ListIcon as={CheckCircleIcon} color='amarillo' />
+									<Highlight
+										query='Automatización de procesos'
+										styles={{ fontWeight: 'bold', color: 'natural' }}
+									>
+										Automatización de procesos: Implementación de soluciones
+										para la automatización de procesos empresariales.
+									</Highlight>
+								</ListItem>
+								<ListItem maxW='70ch' textAlign='justify'>
+									<ListIcon as={CheckCircleIcon} color='amarillo' />
+									<Highlight
+										query='Migración a la Nube'
+										styles={{ fontWeight: 'bold', color: 'natural' }}
+									>
+										Migración a la nube: Asesoramiento y ejecución en
+										migraciones a plataformas de cloud computing.
+									</Highlight>
+								</ListItem>
+								<ListItem maxW='70ch' textAlign='justify'>
+									<ListIcon as={CheckCircleIcon} color='amarillo' />
+									<Highlight
+										query='Actualización de Sistemas'
+										styles={{ fontWeight: 'bold', color: 'natural' }}
+									>
+										Actualización de Sistemas: Renovación y actualización de
+										sistemas y aplicaciones.
+									</Highlight>
+								</ListItem>
+							</List>
+							<Button
+								w='fit-content'
+								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+							>
+								Me interesa
+							</Button>
+						</Stack>
+						<Stack position='relative' w='40%' overflow='hidden'>
+							<Image
+								objectFit='cover'
+								h='100%'
+								src='/assets/img/servicios-modernizacion.png'
 							/>
 						</Stack>
 					</Stack>
