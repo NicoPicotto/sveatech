@@ -7,7 +7,9 @@ import {
 	ListIcon,
 	Highlight,
 	Image,
+	Link,
 } from '@chakra-ui/react';
+import { Link as ReachLink } from 'react-router-dom';
 import Section from '../Section/Section';
 import { ArrowRightIcon, CheckCircleIcon } from '@heroicons/react/24/solid';
 
@@ -73,12 +75,14 @@ const Servicios = () => {
 							</Highlight>
 						</ListItem>
 					</List>
-					<Button
-						w='fit-content'
-						rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
-					>
-						Contactar por este servicio
-					</Button>
+					<Link as={ReachLink} to='/contacto?networking'>
+						<Button
+							w='fit-content'
+							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+						>
+							Contactar por este servicio
+						</Button>
+					</Link>
 				</Stack>
 				<Stack position='relative' w='40%' overflow='hidden'>
 					<Image
@@ -137,12 +141,14 @@ const Servicios = () => {
 							</Highlight>
 						</ListItem>
 					</List>
-					<Button
-						w='fit-content'
-						rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
-					>
-						Contactar por este servicio
-					</Button>
+					<Link as={ReachLink} to='/contacto?telefonia'>
+						<Button
+							w='fit-content'
+							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+						>
+							Contactar por este servicio
+						</Button>
+					</Link>
 				</Stack>
 				<Stack position='relative' w='40%' overflow='hidden'>
 					<Image
@@ -202,12 +208,14 @@ const Servicios = () => {
 							</Highlight>
 						</ListItem>
 					</List>
-					<Button
-						w='fit-content'
-						rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
-					>
-						Contactar por este servicio
-					</Button>
+					<Link as={ReachLink} to='/contacto?omnicanalidad'>
+						<Button
+							w='fit-content'
+							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+						>
+							Contactar por este servicio
+						</Button>
+					</Link>
 				</Stack>
 				<Stack position='relative' w='40%' overflow='hidden'>
 					<Image
@@ -276,12 +284,14 @@ const Servicios = () => {
 							</Highlight>
 						</ListItem>
 					</List>
-					<Button
-						w='fit-content'
-						rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
-					>
-						Contactar por este servicio
-					</Button>
+					<Link as={ReachLink} to='/contacto?cyberseguridad'>
+						<Button
+							w='fit-content'
+							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+						>
+							Contactar por este servicio
+						</Button>
+					</Link>
 				</Stack>
 				<Stack position='relative' w='40%' overflow='hidden'>
 					<Image
@@ -348,12 +358,14 @@ const Servicios = () => {
 							</Highlight>
 						</ListItem>
 					</List>
-					<Button
-						w='fit-content'
-						rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
-					>
-						Contactar por este servicio
-					</Button>
+					<Link as={ReachLink} to='/contacto?infraestructura'>
+						<Button
+							w='fit-content'
+							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+						>
+							Contactar por este servicio
+						</Button>
+					</Link>
 				</Stack>
 				<Stack position='relative' w='40%' overflow='hidden'>
 					<Image
@@ -419,12 +431,14 @@ const Servicios = () => {
 							</Highlight>
 						</ListItem>
 					</List>
-					<Button
-						w='fit-content'
-						rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
-					>
-						Contactar por este servicio
-					</Button>
+					<Link as={ReachLink} to='/contacto?modernizacion'>
+						<Button
+							w='fit-content'
+							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+						>
+							Contactar por este servicio
+						</Button>
+					</Link>
 				</Stack>
 				<Stack position='relative' w='40%' overflow='hidden'>
 					<Image

@@ -7,10 +7,12 @@ import {
 	Link,
 	Button,
 	IconButton,
+	useMediaQuery,
 } from '@chakra-ui/react';
 import { Link as ReachLink } from 'react-router-dom';
 
 const Footer = () => {
+	const [isMobile] = useMediaQuery('(max-width: 1100px)');
 	return (
 		<Stack
 			paddingInline='2em'
@@ -18,8 +20,15 @@ const Footer = () => {
 			align='center'
 			bgColor='azul-2'
 		>
-			<HStack w='100%' maxW='1280px' align='center' justify='space-between'>
-				<Stack spacing={5} w='40%'>
+			<Stack
+				direction={isMobile ? 'column' : 'row'}
+				w='100%'
+				maxW='1280px'
+				align='center'
+				spacing={isMobile && 30}
+				justify='space-between'
+			>
+				<Stack spacing={5} w={isMobile ? '100%' : '40%'}>
 					<Image src='/assets/img/Sveatech.svg' w='185px' />
 					<Stack>
 						<HStack>
@@ -47,12 +56,17 @@ const Footer = () => {
 				<Divider
 					borderWidth={1}
 					borderColor='amarillo'
-					orientation='vertical'
-					minH='100px'
+					orientation={isMobile ? 'horizontal' : 'vertical'}
+					minH={!isMobile && '100px'}
 				/>
 
-				<Stack direction='row' w='35%' justify='center' spacing={20}>
-					<Stack align='center'>
+				<Stack
+					direction={isMobile ? 'column' : 'row'}
+					w={isMobile ? '100%' : '35%'}
+					justify='center'
+					spacing={isMobile ? 5 : 30}
+				>
+					<Stack align={isMobile ? 'left' : 'center'} spacing={isMobile && 5}>
 						<Link as={ReachLink} to='/nosotros'>
 							<Button variant='link'>Nosotros</Button>
 						</Link>
@@ -61,7 +75,7 @@ const Footer = () => {
 						</Link>
 					</Stack>
 
-					<Stack align='center'>
+					<Stack align={isMobile ? 'left' : 'center'} spacing={isMobile && 5}>
 						<Link as={ReachLink} to='/experiencia'>
 							<Button variant='link'>Experiencia</Button>
 						</Link>
@@ -74,10 +88,16 @@ const Footer = () => {
 				<Divider
 					borderWidth={1}
 					borderColor='amarillo'
-					orientation='vertical'
-					minH='100px'
+					orientation={isMobile ? 'horizontal' : 'vertical'}
+					minH={!isMobile && '100px'}
 				/>
-				<Stack w='25%' align='flex-end' gap={3}>
+				<Stack
+					w={isMobile ? '100%' : '25%'}
+					align={isMobile ? 'flex-start' : 'flex-end'}
+					gap={3}
+					direction={isMobile ? 'row' : 'column'}
+					justify={isMobile && 'space-between'}
+				>
 					<HStack spacing={5}>
 						<IconButton
 							bgColor='amarillo'
@@ -92,7 +112,7 @@ const Footer = () => {
 						<Text fontSize='sm'>Todos los derechos reservados.</Text>
 					</Stack>
 				</Stack>
-			</HStack>
+			</Stack>
 		</Stack>
 	);
 };

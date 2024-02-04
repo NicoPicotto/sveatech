@@ -8,6 +8,7 @@ import {
 	ListIcon,
 	Highlight,
 	Image,
+	useMediaQuery,
 } from '@chakra-ui/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -23,6 +24,8 @@ import { Mousewheel, Navigation, Autoplay } from 'swiper/modules';
 import { ArrowRightIcon, CheckCircleIcon } from '@heroicons/react/24/solid';
 
 const Servicios = () => {
+	const [isMobile] = useMediaQuery('(max-width: 1100px)');
+
 	return (
 		<Section>
 			<Heading
@@ -50,7 +53,7 @@ const Servicios = () => {
 					pauseOnMouseEnter: true,
 				}}
 				spaceBetween={5}
-				mousewheel={true}
+				mousewheel={isMobile ? false : true}
 				navigation={true}
 				grabCursor={true}
 				modules={[Mousewheel, Navigation, Autoplay]}
@@ -59,7 +62,7 @@ const Servicios = () => {
 				<SwiperSlide>
 					<Stack
 						borderRadius={8}
-						direction='row'
+						direction={isMobile ? 'column-reverse' : 'row'}
 						gap={0}
 						height='100%'
 						overflow='hidden'
@@ -67,9 +70,9 @@ const Servicios = () => {
 					>
 						<Stack
 							paddingBlock='2em'
-							paddingInline="2.5em"
+							paddingInline={isMobile ? '1.5em' : '2.5em'}
 							h='100%'
-							w='60%'
+							w={isMobile ? '100%' : '60%'}
 							gap={5}
 						>
 							<Heading
@@ -82,7 +85,7 @@ const Servicios = () => {
 								Networking y Conectividad
 							</Heading>
 							<List spacing={5} flex={1}>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Diseño de Redes'
@@ -94,7 +97,7 @@ const Servicios = () => {
 										específicas de cada cliente.
 									</Highlight>
 								</ListItem>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Gestión de Redes'
@@ -106,7 +109,7 @@ const Servicios = () => {
 										tráfico y balanceo de carga.
 									</Highlight>
 								</ListItem>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Soluciones de Conectividad'
@@ -124,11 +127,15 @@ const Servicios = () => {
 								Ver más
 							</Button>
 						</Stack>
-						<Stack position='relative' w='40%' overflow='hidden'>
+						<Stack
+							position='relative'
+							w={isMobile ? '100%' : '40%'}
+							overflow='hidden'
+						>
 							<Image
 								objectFit='cover'
 								h='100%'
-								objectPosition="right"
+								objectPosition='right'
 								src='/assets/img/servicios-lan.png'
 							/>
 						</Stack>
@@ -137,7 +144,7 @@ const Servicios = () => {
 				<SwiperSlide>
 					<Stack
 						borderRadius={8}
-						direction='row'
+						direction={isMobile ? 'column-reverse' : 'row'}
 						gap={0}
 						height='100%'
 						overflow='hidden'
@@ -145,9 +152,9 @@ const Servicios = () => {
 					>
 						<Stack
 							paddingBlock='2em'
-							paddingInline="2.5em"
+							paddingInline={isMobile ? '1.5em' : '2.5em'}
 							h='100%'
-							w='60%'
+							w={isMobile ? '100%' : '60%'}
 							gap={5}
 						>
 							<Heading
@@ -160,7 +167,7 @@ const Servicios = () => {
 								Telefonía IP y Comunicaciones Unificadas
 							</Heading>
 							<List spacing={5} flex={1}>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Telefonía IP'
@@ -171,7 +178,7 @@ const Servicios = () => {
 										económicas, utilizando la infraestructura de red existente.
 									</Highlight>
 								</ListItem>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Comunicaciones Unificadas'
@@ -190,7 +197,11 @@ const Servicios = () => {
 								Ver más
 							</Button>
 						</Stack>
-						<Stack position='relative' w='40%' overflow='hidden'>
+						<Stack
+							position='relative'
+							w={isMobile ? '100%' : '40%'}
+							overflow='hidden'
+						>
 							<Image
 								objectFit='cover'
 								h='100%'
@@ -202,7 +213,7 @@ const Servicios = () => {
 				<SwiperSlide>
 					<Stack
 						borderRadius={8}
-						direction='row'
+						direction={isMobile ? 'column-reverse' : 'row'}
 						gap={0}
 						height='100%'
 						overflow='hidden'
@@ -210,9 +221,9 @@ const Servicios = () => {
 					>
 						<Stack
 							paddingBlock='2em'
-							paddingInline="2.5em"
+							paddingInline={isMobile ? '1.5em' : '2.5em'}
 							h='100%'
-							w='60%'
+							w={isMobile ? '100%' : '60%'}
 							gap={5}
 						>
 							<Heading
@@ -225,7 +236,7 @@ const Servicios = () => {
 								Soluciones de Omnicanalidad
 							</Heading>
 							<List spacing={5} flex={1}>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Estrategias de Omnicanalidad'
@@ -237,7 +248,7 @@ const Servicios = () => {
 										comunicación.
 									</Highlight>
 								</ListItem>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Integración de Canales'
@@ -257,7 +268,11 @@ const Servicios = () => {
 								Ver más
 							</Button>
 						</Stack>
-						<Stack position='relative' w='40%' overflow='hidden'>
+						<Stack
+							position='relative'
+							w={isMobile ? '100%' : '40%'}
+							overflow='hidden'
+						>
 							<Image
 								objectFit='cover'
 								h='100%'
@@ -269,7 +284,7 @@ const Servicios = () => {
 				<SwiperSlide>
 					<Stack
 						borderRadius={8}
-						direction='row'
+						direction={isMobile ? 'column-reverse' : 'row'}
 						gap={0}
 						height='100%'
 						overflow='hidden'
@@ -277,9 +292,9 @@ const Servicios = () => {
 					>
 						<Stack
 							paddingBlock='2em'
-							paddingInline="2.5em"
+							paddingInline={isMobile ? '1.5em' : '2.5em'}
 							h='100%'
-							w='60%'
+							w={isMobile ? '100%' : '60%'}
 							gap={5}
 						>
 							<Heading
@@ -292,7 +307,7 @@ const Servicios = () => {
 								Cyberseguridad
 							</Heading>
 							<List spacing={5} flex={1}>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Auditorías de seguridad'
@@ -303,7 +318,7 @@ const Servicios = () => {
 										recomendaciones para fortalecer las defensas.
 									</Highlight>
 								</ListItem>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Soluciones de Seguridad Integral'
@@ -315,7 +330,7 @@ const Servicios = () => {
 										intrusiones.
 									</Highlight>
 								</ListItem>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Respuesta a Incidentes'
@@ -334,7 +349,11 @@ const Servicios = () => {
 								Ver más
 							</Button>
 						</Stack>
-						<Stack position='relative' w='40%' overflow='hidden'>
+						<Stack
+							position='relative'
+							w={isMobile ? '100%' : '40%'}
+							overflow='hidden'
+						>
 							<Image
 								objectFit='cover'
 								h='100%'
@@ -346,7 +365,7 @@ const Servicios = () => {
 				<SwiperSlide>
 					<Stack
 						borderRadius={8}
-						direction='row'
+						direction={isMobile ? 'column-reverse' : 'row'}
 						gap={0}
 						height='100%'
 						overflow='hidden'
@@ -354,9 +373,9 @@ const Servicios = () => {
 					>
 						<Stack
 							paddingBlock='2em'
-							paddingInline="2.5em"
+							paddingInline={isMobile ? '1.5em' : '2.5em'}
 							h='100%'
-							w='60%'
+							w={isMobile ? '100%' : '60%'}
 							gap={5}
 						>
 							<Heading
@@ -369,7 +388,7 @@ const Servicios = () => {
 								Infraestructura IT
 							</Heading>
 							<List spacing={5} flex={1}>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Diseño de Infraestructura'
@@ -380,7 +399,7 @@ const Servicios = () => {
 										soluciones de almacenamiento.
 									</Highlight>
 								</ListItem>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Virtualización y Almacenamiento'
@@ -390,7 +409,7 @@ const Servicios = () => {
 										soluciones de virtualización y almacenamiento en la nube.
 									</Highlight>
 								</ListItem>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Mantenimiento y Gestión de Sistemas'
@@ -408,7 +427,11 @@ const Servicios = () => {
 								Ver más
 							</Button>
 						</Stack>
-						<Stack position='relative' w='40%' overflow='hidden'>
+						<Stack
+							position='relative'
+							w={isMobile ? '100%' : '40%'}
+							overflow='hidden'
+						>
 							<Image
 								objectFit='cover'
 								h='100%'
@@ -420,7 +443,7 @@ const Servicios = () => {
 				<SwiperSlide>
 					<Stack
 						borderRadius={8}
-						direction='row'
+						direction={isMobile ? 'column-reverse' : 'row'}
 						gap={0}
 						height='100%'
 						overflow='hidden'
@@ -428,9 +451,9 @@ const Servicios = () => {
 					>
 						<Stack
 							paddingBlock='2em'
-							paddingInline="2.5em"
+							paddingInline={isMobile ? '1.5em' : '2.5em'}
 							h='100%'
-							w='60%'
+							w={isMobile ? '100%' : '60%'}
 							gap={5}
 						>
 							<Heading
@@ -443,7 +466,7 @@ const Servicios = () => {
 								Modernización de Sistemas
 							</Heading>
 							<List spacing={5} flex={1}>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Automatización de procesos'
@@ -453,7 +476,7 @@ const Servicios = () => {
 										para la automatización de procesos empresariales.
 									</Highlight>
 								</ListItem>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Migración a la Nube'
@@ -463,7 +486,7 @@ const Servicios = () => {
 										migraciones a plataformas de cloud computing.
 									</Highlight>
 								</ListItem>
-								<ListItem maxW='70ch' textAlign='justify'>
+								<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 									<ListIcon as={CheckCircleIcon} color='amarillo' />
 									<Highlight
 										query='Actualización de Sistemas'
@@ -481,7 +504,11 @@ const Servicios = () => {
 								Ver más
 							</Button>
 						</Stack>
-						<Stack position='relative' w='40%' overflow='hidden'>
+						<Stack
+							position='relative'
+							w={isMobile ? '100%' : '40%'}
+							overflow='hidden'
+						>
 							<Image
 								objectFit='cover'
 								h='100%'

@@ -8,51 +8,55 @@ import {
 	HStack,
 	Image,
 	Highlight,
+	useMediaQuery,
 } from '@chakra-ui/react';
 import data from './data';
 
 const Valores = () => {
+	const [isMobile] = useMediaQuery('(max-width: 1100px)');
 	return (
-		<Section bgColor='azul-2'>
-			<Heading
-				mb='1em'
-				textAlign='center'
-				size='2xl'
-				fontWeight='regular'
-				letterSpacing={1}
-			>
-				<Highlight
-					query='valores'
-					styles={{
-						color: 'amarillo',
-					}}
+		<Section>
+			<Stack bgColor='azul-2' borderRadius={8} paddingBlock="3em" paddingInline={isMobile ? '1.5em' : '3em'}>
+				<Heading
+					mb='1em'
+					textAlign='center'
+					size='2xl'
+					fontWeight='regular'
+					letterSpacing={1}
 				>
-					Los valores que nos definen.
-				</Highlight>
-			</Heading>
-			<Grid templateColumns='repeat(3, 1fr)' gap={4}>
-				{data &&
-					data.map((item) => (
-						<GridItem key={item.titulo}>
-							<Stack
-								bgColor='rgba(255, 255, 255, 0.1)'
-								borderRadius={8}
-								paddingBlock='1.5em'
-								paddingInline='2em'
-								h='100%'
-							>
-								<HStack>
-									<Image src={item.icon} alt={`Icono valor ${item.titulo}`} />
-									<Heading as='h3' fontSize='2xl' fontWeight='regular'>
-										{item.titulo}
-									</Heading>
-								</HStack>
+					<Highlight
+						query='valores'
+						styles={{
+							color: 'amarillo',
+						}}
+					>
+						Los valores que nos definen.
+					</Highlight>
+				</Heading>
+				<Grid templateColumns={isMobile ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'} gap={4}>
+					{data &&
+						data.map((item) => (
+							<GridItem key={item.titulo}>
+								<Stack
+									bgColor='rgba(255, 255, 255, 0.1)'
+									borderRadius={8}
+									paddingBlock='1.5em'
+									paddingInline='2em'
+									h='100%'
+								>
+									<HStack>
+										<Image src={item.icon} alt={`Icono valor ${item.titulo}`} />
+										<Heading as='h3' fontSize='2xl' fontWeight='regular'>
+											{item.titulo}
+										</Heading>
+									</HStack>
 
-								<Text>{item.texto}</Text>
-							</Stack>
-						</GridItem>
-					))}
-			</Grid>
+									<Text>{item.texto}</Text>
+								</Stack>
+							</GridItem>
+						))}
+				</Grid>
+			</Stack>
 		</Section>
 	);
 };
