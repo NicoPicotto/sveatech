@@ -16,7 +16,12 @@ const NavMobile = ({ onClose, isOpen }) => {
 		<Drawer onClose={onClose} isOpen={isOpen} size='full'>
 			<DrawerOverlay />
 			<DrawerContent bgColor='azul-2'>
-				<DrawerCloseButton color='amarillo' fontSize="1.5rem" padding='2em' />
+				<DrawerCloseButton
+					color='amarillo'
+					fontSize='1.5rem'
+					padding='2em'
+					_focusVisible={false}
+				/>
 				<DrawerBody
 					h='100%'
 					alignItems='center'

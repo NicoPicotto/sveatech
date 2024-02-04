@@ -5,7 +5,7 @@ import {
 	Image,
 	Button,
 	useDisclosure,
-	IconButton,
+	Icon,
 } from '@chakra-ui/react';
 import { Link as ReachLink } from 'react-router-dom';
 import { Bars3Icon } from '@heroicons/react/24/solid';
@@ -48,10 +48,11 @@ const Navbar = () => {
 						<Button variant='link'>Contacto</Button>
 					</Link>
 					{isMobile && (
-						<IconButton
+						<Icon
 							variant='ghost'
 							className='menu-icon'
-							icon={<Bars3Icon />}
+							as={Bars3Icon}
+							fontSize='2.5rem'
 							onClick={onOpen}
 							bgColor='transparent'
 							_hover={{ bgColor: 'transparent' }}
