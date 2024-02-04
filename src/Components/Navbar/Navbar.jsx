@@ -50,9 +50,10 @@ const Navbar = () => {
 						<IconButton
 							color='#FFCB00'
 							variant='ghost'
-							style={{ color: '#FFCB00' }}
+							className='menu-icon'
 							icon={<Bars3Icon color='#FFCB00' />}
 							onClick={onOpen}
+							bgColor='transparent'
 							_hover={{ bgColor: 'transparent' }}
 						/>
 					)}
