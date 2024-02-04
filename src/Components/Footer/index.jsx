@@ -7,12 +7,14 @@ import {
 	Link,
 	Button,
 	IconButton,
-	useMediaQuery,
+	
 } from '@chakra-ui/react';
+import { useMobile } from '../../Context/MobileContext';
 import { Link as ReachLink } from 'react-router-dom';
 
+
 const Footer = () => {
-	const [isMobile] = useMediaQuery('(max-width: 1100px)');
+	const isMobile = useMobile();
 	return (
 		<Stack
 			paddingInline='2em'

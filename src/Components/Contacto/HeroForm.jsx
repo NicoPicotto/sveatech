@@ -12,11 +12,11 @@ import {
 	Input,
 	Select,
 	Textarea,
-	useMediaQuery,
 } from '@chakra-ui/react';
+import { useMobile } from '../../Context/MobileContext';
 
 const HeroForm = () => {
-	const [isMobile] = useMediaQuery('(max-width: 1100px)');
+	const isMobile = useMobile();
 	const form = useRef();
 	const [btnText, setBtnText] = useState('Enviar');
 	const [selectedService, setSelectedService] = useState('');

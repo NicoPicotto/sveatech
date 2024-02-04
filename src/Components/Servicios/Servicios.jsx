@@ -8,14 +8,14 @@ import {
 	Highlight,
 	Image,
 	Link,
-	useMediaQuery,
 } from '@chakra-ui/react';
 import { Link as ReachLink } from 'react-router-dom';
 import Section from '../Section/Section';
 import { ArrowRightIcon, CheckCircleIcon } from '@heroicons/react/24/solid';
+import { useMobile } from '../../Context/MobileContext';
 
 const Servicios = () => {
-	const [isMobile] = useMediaQuery('(max-width: 1100px)');
+	const isMobile = useMobile();
 
 	return (
 		<Section paddingBlock='5em' containerGap='3em'>

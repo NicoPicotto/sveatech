@@ -9,22 +9,25 @@ import NosotrosView from './Views/Nosotros';
 import ServiciosView from './Views/Servicios';
 import ErrorView from './Views/404';
 import ContactoView from './Views/Contacto';
+import { MobileProvider } from './Context/MobileContext';
 
 const App = () => {
 	return (
 		<ChakraProvider theme={theme}>
-			<Router>
-				<ScrolToTop />
-				<Navbar />
-				<Routes>
-					<Route path='/' element={<HomeView />} />
-					<Route path='/nosotros' element={<NosotrosView />} />
-					<Route path='/servicios' element={<ServiciosView />} />
-					<Route path='/contacto' element={<ContactoView />} />
-					<Route path='*' element={<ErrorView />} />
-				</Routes>
-				<Footer />
-			</Router>
+			<MobileProvider>
+				<Router>
+					<ScrolToTop />
+					<Navbar />
+					<Routes>
+						<Route path='/' element={<HomeView />} />
+						<Route path='/nosotros' element={<NosotrosView />} />
+						<Route path='/servicios' element={<ServiciosView />} />
+						<Route path='/contacto' element={<ContactoView />} />
+						<Route path='*' element={<ErrorView />} />
+					</Routes>
+					<Footer />
+				</Router>
+			</MobileProvider>
 		</ChakraProvider>
 	);
 };

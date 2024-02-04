@@ -6,15 +6,16 @@ import {
 	Button,
 	useDisclosure,
 	IconButton,
-	useMediaQuery,
+	
 } from '@chakra-ui/react';
 import { Link as ReachLink } from 'react-router-dom';
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import NavMobile from './NavMobile';
+import { useMobile } from '../../Context/MobileContext';
 
 const Navbar = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	const [isMobile] = useMediaQuery('(max-width: 1100px)');
+	const isMobile = useMobile();
 
 	return (
 		<Stack paddingInline='2em' paddingTop='2em' align='center'>

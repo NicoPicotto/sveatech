@@ -8,9 +8,11 @@ import {
 	ListIcon,
 	Highlight,
 	Image,
-	useMediaQuery,
+	Link,
 } from '@chakra-ui/react';
+import { Link as ReachLink } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useMobile } from '../../../Context/MobileContext';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -24,7 +26,7 @@ import { Mousewheel, Navigation, Autoplay } from 'swiper/modules';
 import { ArrowRightIcon, CheckCircleIcon } from '@heroicons/react/24/solid';
 
 const Servicios = () => {
-	const [isMobile] = useMediaQuery('(max-width: 1100px)');
+	const isMobile = useMobile();
 
 	return (
 		<Section>
@@ -120,12 +122,14 @@ const Servicios = () => {
 									</Highlight>
 								</ListItem>
 							</List>
-							<Button
-								w='fit-content'
-								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
-							>
-								Ver más
-							</Button>
+							<Link as={ReachLink} to='/servicios'>
+								<Button
+									w='fit-content'
+									rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+								>
+									Ver más
+								</Button>
+							</Link>
 						</Stack>
 						<Stack
 							position='relative'
@@ -190,12 +194,14 @@ const Servicios = () => {
 									</Highlight>
 								</ListItem>
 							</List>
-							<Button
-								w='fit-content'
-								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
-							>
-								Ver más
-							</Button>
+							<Link as={ReachLink} to='/servicios'>
+								<Button
+									w='fit-content'
+									rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+								>
+									Ver más
+								</Button>
+							</Link>
 						</Stack>
 						<Stack
 							position='relative'
@@ -261,12 +267,14 @@ const Servicios = () => {
 									</Highlight>
 								</ListItem>
 							</List>
-							<Button
-								w='fit-content'
-								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
-							>
-								Ver más
-							</Button>
+							<Link as={ReachLink} to='/servicios'>
+								<Button
+									w='fit-content'
+									rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+								>
+									Ver más
+								</Button>
+							</Link>
 						</Stack>
 						<Stack
 							position='relative'
@@ -342,12 +350,14 @@ const Servicios = () => {
 									</Highlight>
 								</ListItem>
 							</List>
-							<Button
-								w='fit-content'
-								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
-							>
-								Ver más
-							</Button>
+							<Link as={ReachLink} to='/servicios'>
+								<Button
+									w='fit-content'
+									rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+								>
+									Ver más
+								</Button>
+							</Link>
 						</Stack>
 						<Stack
 							position='relative'
@@ -420,12 +430,14 @@ const Servicios = () => {
 									</Highlight>
 								</ListItem>
 							</List>
-							<Button
-								w='fit-content'
-								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
-							>
-								Ver más
-							</Button>
+							<Link as={ReachLink} to='/servicios'>
+								<Button
+									w='fit-content'
+									rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+								>
+									Ver más
+								</Button>
+							</Link>
 						</Stack>
 						<Stack
 							position='relative'
@@ -497,12 +509,14 @@ const Servicios = () => {
 									</Highlight>
 								</ListItem>
 							</List>
-							<Button
-								w='fit-content'
-								rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
-							>
-								Ver más
-							</Button>
+							<Link as={ReachLink} to='/servicios'>
+								<Button
+									w='fit-content'
+									rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+								>
+									Ver más
+								</Button>
+							</Link>
 						</Stack>
 						<Stack
 							position='relative'

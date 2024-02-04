@@ -8,15 +8,16 @@ import {
 	HStack,
 	Image,
 	Highlight,
-	useMediaQuery,
+	
 } from '@chakra-ui/react';
 import data from './data';
+import { useMobile } from '../../../Context/MobileContext';
 
 const Valores = () => {
-	const [isMobile] = useMediaQuery('(max-width: 1100px)');
+	const isMobile = useMobile();
 	return (
 		<Section bgColor='azul-2'>
-			<Stack  paddingBlock="3em" paddingInline={isMobile ? '0' : '3em'}>
+			<Stack paddingBlock='3em' paddingInline={isMobile ? '0' : '3em'}>
 				<Heading
 					mb='1em'
 					textAlign='center'
@@ -33,7 +34,10 @@ const Valores = () => {
 						Los valores que nos definen.
 					</Highlight>
 				</Heading>
-				<Grid templateColumns={isMobile ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'} gap={4}>
+				<Grid
+					templateColumns={isMobile ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}
+					gap={4}
+				>
 					{data &&
 						data.map((item) => (
 							<GridItem key={item.titulo}>

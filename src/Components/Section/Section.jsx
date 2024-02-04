@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
-import { Stack, useMediaQuery } from '@chakra-ui/react';
+import { Stack } from '@chakra-ui/react';
+import { useMobile } from '../../Context/MobileContext';
 
 const Section = ({ children, containerGap, ...props }) => {
-	const [isMobile] = useMediaQuery('(max-width: 1100px)');
+	const isMobile = useMobile();
 	return (
 		<Stack
 			paddingInline={isMobile ? '1em' : '2em'}
