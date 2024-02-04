@@ -49,7 +49,7 @@ const Navbar = () => {
 					{isMobile && (
 						<IconButton
 							color='amarillo'
-							variant='ghost'
+							variant='outline'
 							icon={<Bars3Icon />}
 							onClick={onOpen}
 							_hover={{ bgColor: 'transparent' }}
