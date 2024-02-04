@@ -1,12 +1,14 @@
 import Section from '../Section/Section';
 import { Stack, Heading, Text, Button, Image, Link } from '@chakra-ui/react';
 import { Link as ReachLink } from 'react-router-dom';
+import { useMobile } from '../../Context/MobileContext';
 
 const ErrorPage = () => {
+	const isMobile = useMobile();
 	return (
 		<Section paddingBlock='5em'>
 			<Stack
-				direction='row'
+				direction={isMobile ? 'column' : 'row'}
 				bgColor='azul-2'
 				borderRadius={8}
 				align='center'
@@ -14,9 +16,9 @@ const ErrorPage = () => {
 				position='relative'
 			>
 				<Stack
-					w='60%'
-					paddingInline='3em'
-					paddingBlock='2.5em'
+					w={isMobile ? '100%' : '60%'}
+					paddingInline={isMobile ? '1em' : '3em'}
+					paddingBlock={isMobile ? '2em' : '2.5em'}
 					gap={10}
 					h='100%'
 				>
@@ -34,7 +36,9 @@ const ErrorPage = () => {
 							Lo sentimos, la página que buscás no existe.
 						</Text>
 						<Link as={ReachLink} to='/'>
-							<Button w='fit-content'>Volver a la página principal</Button>
+							<Button w={isMobile ? '100%' : 'fit-content'}>
+								Volver a la página principal
+							</Button>
 						</Link>
 					</Stack>
 				</Stack>
@@ -47,8 +51,8 @@ const ErrorPage = () => {
 					<Image
 						alt='Retrato de Luis'
 						src='/assets/img/error-img.png'
-						minW='400px'
-						w='500px'
+						minW={!isMobile && '400px'}
+						w={isMobile ? "300px" : '500px'}
 					/>
 				</Stack>
 			</Stack>
