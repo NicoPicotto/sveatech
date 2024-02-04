@@ -14,6 +14,7 @@ import Section from '../../Section/Section';
 
 const Hero = () => {
 	const [isMobile] = useMediaQuery('(max-width: 1100px)');
+	
 	return (
 		<Section>
 			<HStack

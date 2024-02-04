@@ -20,6 +20,7 @@ const HeroForm = () => {
 	const form = useRef();
 	const [btnText, setBtnText] = useState('Enviar');
 	const [selectedService, setSelectedService] = useState('');
+	const [isLoading, setIsLoading] = useState(false);
 
 	useEffect(() => {
 		emailjs.init(import.meta.env.VITE_EMAILJS_API_KEY);
@@ -47,15 +48,18 @@ const HeroForm = () => {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
+		setIsLoading(true);
 
 		emailjs.sendForm('service_0p46lxj', 'template_2f5dshc', form.current).then(
 			(result) => {
 				console.log(result.text);
 				setBtnText('¡Mensaje enviado! Pronto nos pondremos en contacto.');
+				setIsLoading(false);
 			},
 			(error) => {
 				console.log(error.text);
 				setBtnText('Error, por favor intenta nuevamente.');
+				setIsLoading(false);
 			}
 		);
 	};
@@ -175,7 +179,7 @@ const HeroForm = () => {
 										name='user_message'
 									/>
 								</Stack>
-								<Button name='Submit Form' type='submit'>
+								<Button isLoading={isLoading} name='Submit Form' type='submit'>
 									{btnText}
 								</Button>
 							</Stack>
