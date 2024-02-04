@@ -2,27 +2,34 @@ import Section from '../Section/Section';
 import {
 	Stack,
 	Heading,
-	HStack,
 	Text,
 	Button,
 	ListIcon,
 	Image,
 	List,
 	ListItem,
+	useMediaQuery,
 } from '@chakra-ui/react';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 
 const Hero = () => {
+	const [isMobile] = useMediaQuery('(max-width: 1100px)');
 	return (
-		<Section paddingBlock="5em">
-			<HStack
+		<Section paddingBlock='5em'>
+			<Stack
 				bgColor='azul-2'
 				borderRadius={8}
+				direction={isMobile ? 'column' : 'row'}
 				align='flex-start'
 				justify='space-between'
 				position='relative'
 			>
-				<Stack w='50%' paddingInline='3em' paddingBlock='2.5em' gap={10}>
+				<Stack
+					w={isMobile ? '100%' : '50%'}
+					paddingInline={isMobile ? '1em' : '3em'}
+					paddingBlock='2.5em'
+					gap={10}
+				>
 					<Stack>
 						<Heading
 							maxW='20ch'
@@ -34,7 +41,7 @@ const Hero = () => {
 						>
 							Nosotros
 						</Heading>
-						<Text fontSize='lg'>
+						<Text fontSize='lg' textAlign="justify">
 							En Sveatech Consulting, somos un grupo de apasionados por la
 							tecnología y la innovación, comprometidos con llevar a nuestros
 							clientes al próximo nivel. Con una vasta experiencia en el rubro
@@ -55,7 +62,7 @@ const Hero = () => {
 						>
 							Nuestra Misión
 						</Heading>
-						<Text fontSize='lg'>
+						<Text fontSize='lg' textAlign="justify">
 							En Sveatech Consulting, somos un grupo de apasionados por la
 							tecnología y la innovación, comprometidos con llevar a nuestros
 							clientes al próximo nivel. Con una vasta experiencia en el rubro
@@ -76,7 +83,7 @@ const Hero = () => {
 						>
 							Nuestra Visión
 						</Heading>
-						<Text fontSize='lg'>
+						<Text fontSize='lg' textAlign="justify">
 							Convertirnos en referentes dentro de la consultoría IT,
 							reconocidos por nuestra excelencia, innovación y dedicación al
 							éxito de nuestros clientes. Nuestro objetivo es redefinir los
@@ -96,38 +103,41 @@ const Hero = () => {
 							Nuestros Valores
 						</Heading>
 						<List spacing={4}>
-							<ListItem flexDirection='row'>
+							<ListItem flexDirection='row' textAlign="justify">
 								<ListIcon as={CheckCircleIcon} color='amarillo' />
 								Innovación: Buscamos constantemente formas creativas de superar
 								los desafíos tecnológicos.
 							</ListItem>
-							<ListItem flexDirection='row'>
+							<ListItem flexDirection='row' textAlign="justify">
 								<ListIcon as={CheckCircleIcon} color='amarillo' />
 								Excelencia: Estamos comprometidos a entregar la mejor calidad en
 								todo lo que hacemos.
 							</ListItem>
-							<ListItem flexDirection='row'>
+							<ListItem flexDirection='row' textAlign="justify">
 								<ListIcon as={CheckCircleIcon} color='amarillo' />
 								Integridad: Actuamos con honestidad y transparencia,
 								construyendo relaciones de confianza.
 							</ListItem>
-							<ListItem flexDirection='row'>
+							<ListItem flexDirection='row' textAlign="justify">
 								<ListIcon as={CheckCircleIcon} color='amarillo' />
 								Compromiso con el Cliente: Las necesidades de nuestros clientes
 								son nuestra prioridad. Nos enfocamos en ofrecer soluciones a
 								medida y eficaces.
 							</ListItem>
-							<ListItem flexDirection='row'>
+							<ListItem flexDirection='row' textAlign="justify">
 								<ListIcon as={CheckCircleIcon} color='amarillo' />
 								Colaboración: Creemos en el poder del trabajo en equipo para
 								generar ideas innovadoras y alcanzar resultados sobresalientes.
 							</ListItem>
 						</List>
 					</Stack>
-                    <Button w="fit-content">Quiero Contactarme</Button>
+					<Button w={isMobile ? '100%' : 'fit-content'}>
+						Quiero Contactarme
+					</Button>
 				</Stack>
 				<Stack
 					paddingInline='3em'
+					display={isMobile ? 'none' : 'block'}
 					position='sticky'
 					paddingBlock='2em'
 					top='1em'
@@ -139,7 +149,7 @@ const Hero = () => {
 						w='500px'
 					/>
 				</Stack>
-			</HStack>
+			</Stack>
 		</Section>
 	);
 };

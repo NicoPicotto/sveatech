@@ -34,7 +34,6 @@ const Hero = () => {
 						fontWeight='regular'
 						letterSpacing={1}
 						lineHeight={1}
-						
 					>
 						<Highlight
 							query={['Innovación', 'eficiencia', 'tu mano']}
@@ -67,7 +66,7 @@ const Hero = () => {
 						alt='celphone with charts'
 						position='relative'
 						mt='-2em'
-						maxW='550px'
+						maxW='500px'
 					/>
 					<Image
 						src='/assets/img/tablet-1.png'
@@ -75,7 +74,7 @@ const Hero = () => {
 						position='absolute'
 						bottom={0}
 						right='5em'
-						maxW='500px'
+						maxW='450px'
 						mb='-2em'
 						zIndex={5}
 					/>

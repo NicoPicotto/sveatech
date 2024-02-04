@@ -6,9 +6,9 @@ const Section = ({ children, containerGap, ...props }) => {
 	return (
 		<Stack
 			paddingInline={isMobile ? '1em' : '2em'}
-			minH={isMobile ? '100dvh' : '100vh'}
+			minH={isMobile ? '100%' : '100vh'}
 			justify='center'
-			paddingBlock='1.5em'
+			paddingBlock={isMobile ? '5em' : '1.5em'}
 			align='center'
 			{...props}
 		>

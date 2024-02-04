@@ -12,9 +12,11 @@ import {
 	Input,
 	Select,
 	Textarea,
+	useMediaQuery,
 } from '@chakra-ui/react';
 
 const HeroForm = () => {
+	const [isMobile] = useMediaQuery('(max-width: 1100px)');
 	const form = useRef();
 	const [btnText, setBtnText] = useState('Enviar');
 	const [selectedService, setSelectedService] = useState('');
@@ -60,14 +62,20 @@ const HeroForm = () => {
 
 	return (
 		<Section>
-			<HStack
+			<Stack
 				bgColor='azul-2'
 				borderRadius={8}
+				direction={isMobile ? 'column' : 'row'}
 				align='flex-start'
 				justify='space-between'
 				position='relative'
 			>
-				<Stack w='50%' paddingInline='3em' paddingBlock='2.5em' gap={10}>
+				<Stack
+					w={isMobile ? '100%' : '50%'}
+					paddingInline={isMobile ? '1em' : '3em'}
+					paddingBlock={isMobile ? '1em' : '2.5em'}
+					gap={10}
+				>
 					<Stack>
 						<Heading
 							maxW='20ch'
@@ -96,7 +104,12 @@ const HeroForm = () => {
 						</Text>
 					</Stack>
 				</Stack>
-				<Stack w='50%' paddingInline='3em' paddingBlock='2.5em' gap={10}>
+				<Stack
+					w={isMobile ? '100%' : '50%'}
+					paddingInline={isMobile ? '1em' : '3em'}
+					paddingBlock={isMobile ? '1em' : '2.5em'}
+					gap={10}
+				>
 					<form onSubmit={sendEmail} ref={form}>
 						<FormControl>
 							<Stack gap={15}>
@@ -169,7 +182,7 @@ const HeroForm = () => {
 						</FormControl>
 					</form>
 				</Stack>
-			</HStack>
+			</Stack>
 		</Section>
 	);
 };

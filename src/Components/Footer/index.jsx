@@ -66,18 +66,12 @@ const Footer = () => {
 					justify='center'
 					spacing={isMobile ? 5 : 30}
 				>
-					<Stack align={isMobile ? 'left' : 'center'} spacing={isMobile && 5}>
+					<Stack align={isMobile ? 'left' : 'center'} gap={10} direction='row'>
 						<Link as={ReachLink} to='/nosotros'>
 							<Button variant='link'>Nosotros</Button>
 						</Link>
 						<Link as={ReachLink} to='/servicios'>
 							<Button variant='link'>Servicios</Button>
-						</Link>
-					</Stack>
-
-					<Stack align={isMobile ? 'left' : 'center'} spacing={isMobile && 5}>
-						<Link as={ReachLink} to='/experiencia'>
-							<Button variant='link'>Experiencia</Button>
 						</Link>
 
 						<Link as={ReachLink} to='/contacto'>
@@ -95,7 +89,6 @@ const Footer = () => {
 					w={isMobile ? '100%' : '25%'}
 					align={isMobile ? 'flex-start' : 'flex-end'}
 					gap={3}
-					direction={isMobile ? 'row' : 'column'}
 					justify={isMobile && 'space-between'}
 				>
 					<HStack spacing={5}>
@@ -107,7 +100,7 @@ const Footer = () => {
 							icon={<Image w='15px' src='/assets/img/In.svg' />}
 						/>
 					</HStack>
-					<Stack gap={0} align='flex-end'>
+					<Stack gap={0} align={isMobile ? 'flex-start' : 'flex-end'}>
 						<Text fontSize='sm'>Sveatech © 2024.</Text>
 						<Text fontSize='sm'>Todos los derechos reservados.</Text>
 					</Stack>

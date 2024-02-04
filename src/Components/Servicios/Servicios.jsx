@@ -8,17 +8,20 @@ import {
 	Highlight,
 	Image,
 	Link,
+	useMediaQuery,
 } from '@chakra-ui/react';
 import { Link as ReachLink } from 'react-router-dom';
 import Section from '../Section/Section';
 import { ArrowRightIcon, CheckCircleIcon } from '@heroicons/react/24/solid';
 
 const Servicios = () => {
+	const [isMobile] = useMediaQuery('(max-width: 1100px)');
+
 	return (
 		<Section paddingBlock='5em' containerGap='3em'>
 			<Stack
 				borderRadius={8}
-				direction='row'
+				direction={isMobile ? 'column-reverse' : 'row'}
 				gap={0}
 				height='100%'
 				overflow='hidden'
@@ -26,9 +29,9 @@ const Servicios = () => {
 			>
 				<Stack
 					paddingBlock='2em'
-					paddingInline='2.5em'
+					paddingInline={isMobile ? '1em' : '2.5em'}
 					h='100%'
-					w='60%'
+					w={isMobile ? '100%' : '60%'}
 					gap={5}
 				>
 					<Heading
@@ -77,14 +80,18 @@ const Servicios = () => {
 					</List>
 					<Link as={ReachLink} to='/contacto?networking'>
 						<Button
-							w='fit-content'
+							w={isMobile ? "100%" : "fit-content"}
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
 							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
-				<Stack position='relative' w='40%' overflow='hidden'>
+				<Stack
+					position='relative'
+					w={isMobile ? '100%' : '40%'}
+					overflow='hidden'
+				>
 					<Image
 						objectFit='cover'
 						h='100%'
@@ -95,7 +102,7 @@ const Servicios = () => {
 			</Stack>
 			<Stack
 				borderRadius={8}
-				direction='row'
+				direction={isMobile ? "column-reverse" : "row"}
 				gap={0}
 				height='100%'
 				overflow='hidden'
@@ -103,9 +110,9 @@ const Servicios = () => {
 			>
 				<Stack
 					paddingBlock='2em'
-					paddingInline='2.5em'
+					paddingInline={isMobile ? "1em" : "2.5em"}
 					h='100%'
-					w='60%'
+					w={isMobile ? "100%" : '60%'}
 					gap={5}
 				>
 					<Heading
@@ -143,14 +150,14 @@ const Servicios = () => {
 					</List>
 					<Link as={ReachLink} to='/contacto?telefonia'>
 						<Button
-							w='fit-content'
+							w={isMobile ? "100%" : "fit-content"}
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
 							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
-				<Stack position='relative' w='40%' overflow='hidden'>
+				<Stack position='relative' w={isMobile ? "100%": "40%"} overflow='hidden'>
 					<Image
 						objectFit='cover'
 						h='100%'
@@ -160,7 +167,7 @@ const Servicios = () => {
 			</Stack>
 			<Stack
 				borderRadius={8}
-				direction='row'
+				direction={isMobile ? "column-reverse" : "row"}
 				gap={0}
 				height='100%'
 				overflow='hidden'
@@ -168,9 +175,9 @@ const Servicios = () => {
 			>
 				<Stack
 					paddingBlock='2em'
-					paddingInline='2.5em'
+					paddingInline={isMobile ? "1em" : "2.5em"}
 					h='100%'
-					w='60%'
+					w={isMobile ? "100%" : '60%'}
 					gap={5}
 				>
 					<Heading
@@ -210,14 +217,14 @@ const Servicios = () => {
 					</List>
 					<Link as={ReachLink} to='/contacto?omnicanalidad'>
 						<Button
-							w='fit-content'
+							w={isMobile ? "100%" : "fit-content"}
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
 							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
-				<Stack position='relative' w='40%' overflow='hidden'>
+				<Stack position='relative' w={isMobile ? "100%": "40%"} overflow='hidden'>
 					<Image
 						objectFit='cover'
 						h='100%'
@@ -227,7 +234,7 @@ const Servicios = () => {
 			</Stack>
 			<Stack
 				borderRadius={8}
-				direction='row'
+				direction={isMobile ? "column-reverse" : "row"}
 				gap={0}
 				height='100%'
 				overflow='hidden'
@@ -235,9 +242,9 @@ const Servicios = () => {
 			>
 				<Stack
 					paddingBlock='2em'
-					paddingInline='2.5em'
+					paddingInline={isMobile ? "1em" : "2.5em"}
 					h='100%'
-					w='60%'
+					w={isMobile ? "100%" : '60%'}
 					gap={5}
 				>
 					<Heading
@@ -286,14 +293,14 @@ const Servicios = () => {
 					</List>
 					<Link as={ReachLink} to='/contacto?cyberseguridad'>
 						<Button
-							w='fit-content'
+							w={isMobile ? "100%" : "fit-content"}
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
 							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
-				<Stack position='relative' w='40%' overflow='hidden'>
+				<Stack position='relative' w={isMobile ? "100%": "40%"} overflow='hidden'>
 					<Image
 						objectFit='cover'
 						h='100%'
@@ -303,7 +310,7 @@ const Servicios = () => {
 			</Stack>
 			<Stack
 				borderRadius={8}
-				direction='row'
+				direction={isMobile ? "column-reverse" : "row"}
 				gap={0}
 				height='100%'
 				overflow='hidden'
@@ -311,9 +318,9 @@ const Servicios = () => {
 			>
 				<Stack
 					paddingBlock='2em'
-					paddingInline='2.5em'
+					paddingInline={isMobile ? "1em" : "2.5em"}
 					h='100%'
-					w='60%'
+					w={isMobile ? "100%" : '60%'}
 					gap={5}
 				>
 					<Heading
@@ -360,14 +367,14 @@ const Servicios = () => {
 					</List>
 					<Link as={ReachLink} to='/contacto?infraestructura'>
 						<Button
-							w='fit-content'
+							w={isMobile ? "100%" : "fit-content"}
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
 							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
-				<Stack position='relative' w='40%' overflow='hidden'>
+				<Stack position='relative' w={isMobile ? "100%": "40%"} overflow='hidden'>
 					<Image
 						objectFit='cover'
 						h='100%'
@@ -377,7 +384,7 @@ const Servicios = () => {
 			</Stack>
 			<Stack
 				borderRadius={8}
-				direction='row'
+				direction={isMobile ? "column-reverse" : "row"}
 				gap={0}
 				height='100%'
 				overflow='hidden'
@@ -385,9 +392,9 @@ const Servicios = () => {
 			>
 				<Stack
 					paddingBlock='2em'
-					paddingInline='2.5em'
+					paddingInline={isMobile ? "1em" : "2.5em"}
 					h='100%'
-					w='60%'
+					w={isMobile ? "100%" : '60%'}
 					gap={5}
 				>
 					<Heading
@@ -433,14 +440,14 @@ const Servicios = () => {
 					</List>
 					<Link as={ReachLink} to='/contacto?modernizacion'>
 						<Button
-							w='fit-content'
+							w={isMobile ? "100%" : "fit-content"}
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
 							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
-				<Stack position='relative' w='40%' overflow='hidden'>
+				<Stack position='relative' w={isMobile ? "100%": "40%"} overflow='hidden'>
 					<Image
 						objectFit='cover'
 						h='100%'
