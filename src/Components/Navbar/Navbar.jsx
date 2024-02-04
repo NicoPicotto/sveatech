@@ -49,10 +49,9 @@ const Navbar = () => {
 					</Link>
 					{isMobile && (
 						<IconButton
-							color='#FFCB00'
 							variant='ghost'
 							className='menu-icon'
-							icon={<Bars3Icon color='#FFCB00' />}
+							icon={<Bars3Icon />}
 							onClick={onOpen}
 							bgColor='transparent'
 							_hover={{ bgColor: 'transparent' }}
