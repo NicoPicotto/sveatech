@@ -73,11 +73,12 @@ const HeroForm = () => {
 				align='flex-start'
 				justify='space-between'
 				position='relative'
+				paddingBottom='1em'
 			>
 				<Stack
 					w={isMobile ? '100%' : '50%'}
 					paddingInline={isMobile ? '1em' : '3em'}
-					paddingBlock={isMobile ? '1em' : '2.5em'}
+					paddingBlock={isMobile ? '2em' : '2.5em'}
 					gap={10}
 				>
 					<Stack>

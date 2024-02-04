@@ -95,6 +95,7 @@ const Servicios = () => {
 					<Image
 						objectFit='cover'
 						h='100%'
+						maxH='250px'
 						objectPosition='right'
 						src='/assets/img/servicios-lan.png'
 					/>
