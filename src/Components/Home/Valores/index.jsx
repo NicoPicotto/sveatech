@@ -16,7 +16,7 @@ const Valores = () => {
 	const [isMobile] = useMediaQuery('(max-width: 1100px)');
 	return (
 		<Section bgColor='azul-2'>
-			<Stack  paddingBlock="3em" paddingInline={isMobile ? '1.5em' : '3em'}>
+			<Stack  paddingBlock="3em" paddingInline={isMobile ? '0' : '3em'}>
 				<Heading
 					mb='1em'
 					textAlign='center'

@@ -35,7 +35,7 @@ const Servicios = () => {
 					gap={5}
 				>
 					<Heading
-						fontSize='4xl'
+						fontSize='3xl'
 						as='h3'
 						color='amarillo'
 						fontWeight='regular'
@@ -44,7 +44,7 @@ const Servicios = () => {
 						Networking y Conectividad
 					</Heading>
 					<List spacing={5} flex={1}>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Diseño de Redes'
@@ -55,7 +55,7 @@ const Servicios = () => {
 								WLAN adaptadas a las necesidades específicas de cada cliente.
 							</Highlight>
 						</ListItem>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Gestión de Redes'
@@ -67,7 +67,7 @@ const Servicios = () => {
 								balanceo de carga.
 							</Highlight>
 						</ListItem>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Soluciones de Conectividad'
@@ -80,7 +80,7 @@ const Servicios = () => {
 					</List>
 					<Link as={ReachLink} to='/contacto?networking'>
 						<Button
-							w={isMobile ? "100%" : "fit-content"}
+							w={isMobile ? '100%' : 'fit-content'}
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
 							Contactar por este servicio
@@ -102,7 +102,7 @@ const Servicios = () => {
 			</Stack>
 			<Stack
 				borderRadius={8}
-				direction={isMobile ? "column-reverse" : "row"}
+				direction={isMobile ? 'column-reverse' : 'row'}
 				gap={0}
 				height='100%'
 				overflow='hidden'
@@ -110,13 +110,13 @@ const Servicios = () => {
 			>
 				<Stack
 					paddingBlock='2em'
-					paddingInline={isMobile ? "1em" : "2.5em"}
+					paddingInline={isMobile ? '1em' : '2.5em'}
 					h='100%'
-					w={isMobile ? "100%" : '60%'}
+					w={isMobile ? '100%' : '60%'}
 					gap={5}
 				>
 					<Heading
-						fontSize='4xl'
+						fontSize='3xl'
 						as='h3'
 						color='amarillo'
 						fontWeight='regular'
@@ -125,7 +125,7 @@ const Servicios = () => {
 						Telefonía IP y Comunicaciones Unificadas
 					</Heading>
 					<List spacing={5} flex={1}>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Telefonía IP'
@@ -136,7 +136,7 @@ const Servicios = () => {
 								utilizando la infraestructura de red existente.
 							</Highlight>
 						</ListItem>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Comunicaciones Unificadas'
@@ -150,14 +150,18 @@ const Servicios = () => {
 					</List>
 					<Link as={ReachLink} to='/contacto?telefonia'>
 						<Button
-							w={isMobile ? "100%" : "fit-content"}
+							w={isMobile ? '100%' : 'fit-content'}
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
 							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
-				<Stack position='relative' w={isMobile ? "100%": "40%"} overflow='hidden'>
+				<Stack
+					position='relative'
+					w={isMobile ? '100%' : '40%'}
+					overflow='hidden'
+				>
 					<Image
 						objectFit='cover'
 						h='100%'
@@ -167,7 +171,7 @@ const Servicios = () => {
 			</Stack>
 			<Stack
 				borderRadius={8}
-				direction={isMobile ? "column-reverse" : "row"}
+				direction={isMobile ? 'column-reverse' : 'row'}
 				gap={0}
 				height='100%'
 				overflow='hidden'
@@ -175,13 +179,13 @@ const Servicios = () => {
 			>
 				<Stack
 					paddingBlock='2em'
-					paddingInline={isMobile ? "1em" : "2.5em"}
+					paddingInline={isMobile ? '1em' : '2.5em'}
 					h='100%'
-					w={isMobile ? "100%" : '60%'}
+					w={isMobile ? '100%' : '60%'}
 					gap={5}
 				>
 					<Heading
-						fontSize='4xl'
+						fontSize='3xl'
 						as='h3'
 						color='amarillo'
 						fontWeight='regular'
@@ -190,7 +194,7 @@ const Servicios = () => {
 						Soluciones de Omnicanalidad
 					</Heading>
 					<List spacing={5} flex={1}>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Estrategias de Omnicanalidad'
@@ -202,7 +206,7 @@ const Servicios = () => {
 								comunicación.
 							</Highlight>
 						</ListItem>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Integración de Canales'
@@ -217,14 +221,18 @@ const Servicios = () => {
 					</List>
 					<Link as={ReachLink} to='/contacto?omnicanalidad'>
 						<Button
-							w={isMobile ? "100%" : "fit-content"}
+							w={isMobile ? '100%' : 'fit-content'}
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
 							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
-				<Stack position='relative' w={isMobile ? "100%": "40%"} overflow='hidden'>
+				<Stack
+					position='relative'
+					w={isMobile ? '100%' : '40%'}
+					overflow='hidden'
+				>
 					<Image
 						objectFit='cover'
 						h='100%'
@@ -234,7 +242,7 @@ const Servicios = () => {
 			</Stack>
 			<Stack
 				borderRadius={8}
-				direction={isMobile ? "column-reverse" : "row"}
+				direction={isMobile ? 'column-reverse' : 'row'}
 				gap={0}
 				height='100%'
 				overflow='hidden'
@@ -242,13 +250,13 @@ const Servicios = () => {
 			>
 				<Stack
 					paddingBlock='2em'
-					paddingInline={isMobile ? "1em" : "2.5em"}
+					paddingInline={isMobile ? '1em' : '2.5em'}
 					h='100%'
-					w={isMobile ? "100%" : '60%'}
+					w={isMobile ? '100%' : '60%'}
 					gap={5}
 				>
 					<Heading
-						fontSize='4xl'
+						fontSize='3xl'
 						as='h3'
 						color='amarillo'
 						fontWeight='regular'
@@ -257,7 +265,7 @@ const Servicios = () => {
 						Cyberseguridad
 					</Heading>
 					<List spacing={5} flex={1}>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Auditorías de seguridad'
@@ -268,7 +276,7 @@ const Servicios = () => {
 								recomendaciones para fortalecer las defensas.
 							</Highlight>
 						</ListItem>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Soluciones de Seguridad Integral'
@@ -279,7 +287,7 @@ const Servicios = () => {
 								sistemas de detección y prevención de intrusiones.
 							</Highlight>
 						</ListItem>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Respuesta a Incidentes'
@@ -293,14 +301,18 @@ const Servicios = () => {
 					</List>
 					<Link as={ReachLink} to='/contacto?cyberseguridad'>
 						<Button
-							w={isMobile ? "100%" : "fit-content"}
+							w={isMobile ? '100%' : 'fit-content'}
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
 							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
-				<Stack position='relative' w={isMobile ? "100%": "40%"} overflow='hidden'>
+				<Stack
+					position='relative'
+					w={isMobile ? '100%' : '40%'}
+					overflow='hidden'
+				>
 					<Image
 						objectFit='cover'
 						h='100%'
@@ -310,7 +322,7 @@ const Servicios = () => {
 			</Stack>
 			<Stack
 				borderRadius={8}
-				direction={isMobile ? "column-reverse" : "row"}
+				direction={isMobile ? 'column-reverse' : 'row'}
 				gap={0}
 				height='100%'
 				overflow='hidden'
@@ -318,13 +330,13 @@ const Servicios = () => {
 			>
 				<Stack
 					paddingBlock='2em'
-					paddingInline={isMobile ? "1em" : "2.5em"}
+					paddingInline={isMobile ? '1em' : '2.5em'}
 					h='100%'
-					w={isMobile ? "100%" : '60%'}
+					w={isMobile ? '100%' : '60%'}
 					gap={5}
 				>
 					<Heading
-						fontSize='4xl'
+						fontSize='3xl'
 						as='h3'
 						color='amarillo'
 						fontWeight='regular'
@@ -333,7 +345,7 @@ const Servicios = () => {
 						Infraestructura IT
 					</Heading>
 					<List spacing={5} flex={1}>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Diseño de Infraestructura'
@@ -344,7 +356,7 @@ const Servicios = () => {
 								soluciones de almacenamiento.
 							</Highlight>
 						</ListItem>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Virtualización y Almacenamiento'
@@ -354,7 +366,7 @@ const Servicios = () => {
 								virtualización y almacenamiento en la nube.
 							</Highlight>
 						</ListItem>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Mantenimiento y Gestión de Sistemas'
@@ -367,14 +379,18 @@ const Servicios = () => {
 					</List>
 					<Link as={ReachLink} to='/contacto?infraestructura'>
 						<Button
-							w={isMobile ? "100%" : "fit-content"}
+							w={isMobile ? '100%' : 'fit-content'}
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
 							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
-				<Stack position='relative' w={isMobile ? "100%": "40%"} overflow='hidden'>
+				<Stack
+					position='relative'
+					w={isMobile ? '100%' : '40%'}
+					overflow='hidden'
+				>
 					<Image
 						objectFit='cover'
 						h='100%'
@@ -384,7 +400,7 @@ const Servicios = () => {
 			</Stack>
 			<Stack
 				borderRadius={8}
-				direction={isMobile ? "column-reverse" : "row"}
+				direction={isMobile ? 'column-reverse' : 'row'}
 				gap={0}
 				height='100%'
 				overflow='hidden'
@@ -392,13 +408,13 @@ const Servicios = () => {
 			>
 				<Stack
 					paddingBlock='2em'
-					paddingInline={isMobile ? "1em" : "2.5em"}
+					paddingInline={isMobile ? '1em' : '2.5em'}
 					h='100%'
-					w={isMobile ? "100%" : '60%'}
+					w={isMobile ? '100%' : '60%'}
 					gap={5}
 				>
 					<Heading
-						fontSize='4xl'
+						fontSize='3xl'
 						as='h3'
 						color='amarillo'
 						fontWeight='regular'
@@ -407,7 +423,7 @@ const Servicios = () => {
 						Modernización de Sistemas
 					</Heading>
 					<List spacing={5} flex={1}>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Automatización de procesos'
@@ -417,7 +433,7 @@ const Servicios = () => {
 								automatización de procesos empresariales.
 							</Highlight>
 						</ListItem>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Migración a la Nube'
@@ -427,7 +443,7 @@ const Servicios = () => {
 								plataformas de cloud computing.
 							</Highlight>
 						</ListItem>
-						<ListItem maxW='70ch' textAlign='justify'>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
 							<ListIcon as={CheckCircleIcon} color='amarillo' />
 							<Highlight
 								query='Actualización de Sistemas'
@@ -440,14 +456,18 @@ const Servicios = () => {
 					</List>
 					<Link as={ReachLink} to='/contacto?modernizacion'>
 						<Button
-							w={isMobile ? "100%" : "fit-content"}
+							w={isMobile ? '100%' : 'fit-content'}
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
 							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
-				<Stack position='relative' w={isMobile ? "100%": "40%"} overflow='hidden'>
+				<Stack
+					position='relative'
+					w={isMobile ? '100%' : '40%'}
+					overflow='hidden'
+				>
 					<Image
 						objectFit='cover'
 						h='100%'

@@ -89,7 +89,7 @@ const HeroForm = () => {
 							color='amarillo'
 							letterSpacing={1}
 						>
-							Esperamos tu contacto
+							Esperamos tu mensaje
 						</Heading>
 						<Text fontSize='lg'>
 							Completá el formulario para que podamos ponernos en contacto con

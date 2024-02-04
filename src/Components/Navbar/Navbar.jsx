@@ -42,6 +42,7 @@ const Navbar = () => {
 						as={ReachLink}
 						to='/contacto'
 						display={isMobile ? 'none' : 'block'}
+						zIndex={100}
 					>
 						<Button variant='link'>Contacto</Button>
 					</Link>

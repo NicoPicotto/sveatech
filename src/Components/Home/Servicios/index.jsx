@@ -76,7 +76,7 @@ const Servicios = () => {
 							gap={5}
 						>
 							<Heading
-								fontSize='4xl'
+								fontSize='3xl'
 								as='h3'
 								color='amarillo'
 								fontWeight='regular'
@@ -158,7 +158,7 @@ const Servicios = () => {
 							gap={5}
 						>
 							<Heading
-								fontSize='4xl'
+								fontSize='3xl'
 								as='h3'
 								color='amarillo'
 								fontWeight='regular'
@@ -227,7 +227,7 @@ const Servicios = () => {
 							gap={5}
 						>
 							<Heading
-								fontSize='4xl'
+								fontSize='3xl'
 								as='h3'
 								color='amarillo'
 								fontWeight='regular'
@@ -298,7 +298,7 @@ const Servicios = () => {
 							gap={5}
 						>
 							<Heading
-								fontSize='4xl'
+								fontSize='3xl'
 								as='h3'
 								color='amarillo'
 								fontWeight='regular'
@@ -379,7 +379,7 @@ const Servicios = () => {
 							gap={5}
 						>
 							<Heading
-								fontSize='4xl'
+								fontSize='3xl'
 								as='h3'
 								color='amarillo'
 								fontWeight='regular'
@@ -457,7 +457,7 @@ const Servicios = () => {
 							gap={5}
 						>
 							<Heading
-								fontSize='4xl'
+								fontSize='3xl'
 								as='h3'
 								color='amarillo'
 								fontWeight='regular'
