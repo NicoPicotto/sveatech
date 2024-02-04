@@ -11,6 +11,7 @@ import { Link as ReachLink } from 'react-router-dom';
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import NavMobile from './NavMobile';
 import { useMobile } from '../../Context/MobileContext';
+import './nav.css';
 
 const Navbar = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
