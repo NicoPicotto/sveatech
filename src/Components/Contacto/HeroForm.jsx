@@ -36,6 +36,8 @@ const HeroForm = () => {
 			cyberseguridad: 'Cyberseguridad',
 			infraestructura: 'Infraestructura IT',
 			modernizacion: 'Modernización de Sistemas',
+			soporte: 'Soporte Operativo IT',
+			video: 'Videovigilancia Profesional',
 		};
 
 		for (const param of queryParams.keys()) {
@@ -167,6 +169,12 @@ const HeroForm = () => {
 										</option>
 										<option value='Modernización de Sistemas'>
 											Modernización de Sistemas
+										</option>
+										<option value='Soporte Operativo IT'>
+											Soporte Operativo IT
+										</option>
+										<option value='Videovigilancia Profesional'>
+											Videovigilancia Profesional
 										</option>
 										<option value='Otro/s'>Otro/s</option>
 									</Select>

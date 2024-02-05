@@ -476,6 +476,161 @@ const Servicios = () => {
 					/>
 				</Stack>
 			</Stack>
+			<Stack
+				borderRadius={8}
+				direction={isMobile ? 'column-reverse' : 'row'}
+				gap={0}
+				height='100%'
+				overflow='hidden'
+				bgColor='azul-2'
+			>
+				<Stack
+					paddingBlock='2em'
+					paddingInline={isMobile ? '1.5em' : '2.5em'}
+					h='100%'
+					w={isMobile ? '100%' : '60%'}
+					gap={5}
+				>
+					<Heading
+						fontSize='3xl'
+						as='h3'
+						color='amarillo'
+						fontWeight='regular'
+						letterSpacing={1}
+					>
+						Soporte Operativo IT
+					</Heading>
+					<List spacing={5} flex={1}>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
+							<ListIcon as={CheckCircleIcon} color='amarillo' />
+							<Highlight
+								query='Soporte Técnico Integral'
+								styles={{ fontWeight: 'bold', color: 'natural' }}
+							>
+								Soporte Técnico Integral: Asistencia técnica para hardware y
+								software, con enfoque en rápida resolución y minimización de
+								inactividad.
+							</Highlight>
+						</ListItem>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
+							<ListIcon as={CheckCircleIcon} color='amarillo' />
+							<Highlight
+								query='Mantenimiento de Sistemas'
+								styles={{ fontWeight: 'bold', color: 'natural' }}
+							>
+								Mantenimiento de Sistemas: Mantenimiento preventivo y correctivo
+								de sistemas IT.
+							</Highlight>
+						</ListItem>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
+							<ListIcon as={CheckCircleIcon} color='amarillo' />
+							<Highlight
+								query='Monitorización de Sistemas'
+								styles={{ fontWeight: 'bold', color: 'natural' }}
+							>
+								Monitorización de Sistemas: Supervisión constante de sistemas
+								IT.
+							</Highlight>
+						</ListItem>
+					</List>
+					<Link as={ReachLink} to='/contacto?soporte'>
+						<Button
+							w='fit-content'
+							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+						>
+							Ver más
+						</Button>
+					</Link>
+				</Stack>
+				<Stack
+					position='relative'
+					w={isMobile ? '100%' : '40%'}
+					overflow='hidden'
+				>
+					<Image
+						objectFit='cover'
+						h='100%'
+						src='/assets/img/soporte.png'
+					/>
+				</Stack>
+			</Stack>
+			<Stack
+				borderRadius={8}
+				direction={isMobile ? 'column-reverse' : 'row'}
+				gap={0}
+				height='100%'
+				overflow='hidden'
+				bgColor='azul-2'
+			>
+				<Stack
+					paddingBlock='2em'
+					paddingInline={isMobile ? '1.5em' : '2.5em'}
+					h='100%'
+					w={isMobile ? '100%' : '60%'}
+					gap={5}
+				>
+					<Heading
+						fontSize='3xl'
+						as='h3'
+						color='amarillo'
+						fontWeight='regular'
+						letterSpacing={1}
+					>
+						Videovigilancia Profesional
+					</Heading>
+					<List spacing={5} flex={1}>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
+							<ListIcon as={CheckCircleIcon} color='amarillo' />
+							<Highlight
+								query='Implementación de Sistemas de Videovigilancia'
+								styles={{ fontWeight: 'bold', color: 'natural' }}
+							>
+								Implementación de Sistemas de Videovigilancia: Diseño e
+								instalación de sistemas de videovigilancia personalizados.
+							</Highlight>
+						</ListItem>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
+							<ListIcon as={CheckCircleIcon} color='amarillo' />
+							<Highlight
+								query='Análisis Inteligente de Video'
+								styles={{ fontWeight: 'bold', color: 'natural' }}
+							>
+								Análisis Inteligente de Video: Tecnologías de análisis de video
+								avanzadas para seguridad y toma de decisiones.
+							</Highlight>
+						</ListItem>
+						<ListItem maxW='70ch' textAlign={isMobile ? 'left' : 'justify'}>
+							<ListIcon as={CheckCircleIcon} color='amarillo' />
+							<Highlight
+								query='Gestión y Almacenamiento de Video'
+								styles={{ fontWeight: 'bold', color: 'natural' }}
+							>
+								Gestión y Almacenamiento de Video: Soluciones para
+								almacenamiento y acceso a grabaciones de video.
+							</Highlight>
+						</ListItem>
+					</List>
+					<Link as={ReachLink} to='/contacto?video'>
+						<Button
+							w='fit-content'
+							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
+						>
+							Ver más
+						</Button>
+					</Link>
+				</Stack>
+				<Stack
+					position='relative'
+					w={isMobile ? '100%' : '40%'}
+					overflow='hidden'
+				>
+					<Image
+						objectFit='cover'
+						h='100%'
+						src='/assets/img/video.png'
+					/>
+				</Stack>
+			</Stack>
 		</Section>
 	);
 };
