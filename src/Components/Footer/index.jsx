@@ -7,18 +7,18 @@ import {
 	Link,
 	Button,
 	IconButton,
-	
 } from '@chakra-ui/react';
 import { useMobile } from '../../Context/MobileContext';
 import { Link as ReachLink } from 'react-router-dom';
 
-
 const Footer = () => {
 	const isMobile = useMobile();
+	const year = new Date().getFullYear();
+
 	return (
 		<Stack
 			paddingInline='2em'
-			paddingBlock='6em'
+			paddingBlock='4em'
 			align='center'
 			bgColor='azul-2'
 		>
@@ -36,7 +36,7 @@ const Footer = () => {
 						<HStack>
 							<Image src='/assets/img/location.svg' alt='Location Icon' />
 							<Text fontSize='sm'>
-								Calle Falsa 123, General Deheza, Córdoba, Argentina.
+								Pasaje Perú 13 (X5923DVA) - General Deheza - Córdoba - Argentina
 							</Text>
 						</HStack>
 						<HStack>
@@ -99,11 +99,14 @@ const Footer = () => {
 							isRound={true}
 							size=''
 							p={1}
+							as='a'
+							target='_blank'
+							href='https://www.linkedin.com/company/sveatech-consulting/'
 							icon={<Image w='15px' src='/assets/img/In.svg' />}
 						/>
 					</HStack>
 					<Stack gap={0} align={isMobile ? 'flex-start' : 'flex-end'}>
-						<Text fontSize='sm'>Sveatech © 2024.</Text>
+						<Text fontSize='sm'>Sveatech © {year}.</Text>
 						<Text fontSize='sm'>Todos los derechos reservados.</Text>
 					</Stack>
 				</Stack>
