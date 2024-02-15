@@ -147,7 +147,7 @@ const Hero = () => {
 					top='1em'
 				>
 					<Image
-						alt='Retrato de Luis'
+						alt='Retrato de CEO Luis Cerutti'
 						src='/assets/img/retrato-luis.png'
 						minW='400px'
 						w='500px'

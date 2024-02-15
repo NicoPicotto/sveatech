@@ -31,7 +31,7 @@ const Footer = () => {
 				justify='space-between'
 			>
 				<Stack spacing={5} w={isMobile ? '100%' : '40%'}>
-					<Image src='/assets/img/Sveatech.svg' w='185px' />
+					<Image src='/assets/img/Sveatech.svg' w='185px' alt='Logo Sveatech' />
 					<Stack>
 						<HStack>
 							<Image src='/assets/img/location.svg' alt='Location Icon' />
@@ -49,7 +49,7 @@ const Footer = () => {
 								fontSize='sm'
 								target='_blank'
 							>
-								(0358) - 4056399
+								+54 9 3584 36-9625
 							</Text>
 						</HStack>
 					</Stack>

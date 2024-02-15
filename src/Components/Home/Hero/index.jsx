@@ -64,14 +64,14 @@ const Hero = () => {
 				>
 					<Image
 						src='/assets/img/tablet-2.png'
-						alt='celphone with charts'
+						alt='Tablet with charts'
 						position='relative'
 						mt='-2em'
 						maxW='500px'
 					/>
 					<Image
 						src='/assets/img/tablet-1.png'
-						alt='celphone with charts'
+						alt='Smaller tablet with charts'
 						position='absolute'
 						bottom={0}
 						right='5em'

@@ -21,7 +21,7 @@ const Navbar = () => {
 		<Stack paddingInline='2em' paddingTop='2em' align='center'>
 			<HStack w='100%' maxW='1280px' align='center' justify='space-between'>
 				<Link as={ReachLink} to='/'>
-					<Image src='/assets/img/Sveatech.svg' w='185px' />
+					<Image src='/assets/img/Sveatech.svg' alt="Sveatech Logo" w='185px' />
 				</Link>
 				<HStack gap={10}>
 					<Link

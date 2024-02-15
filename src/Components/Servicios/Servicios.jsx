@@ -97,6 +97,7 @@ const Servicios = () => {
 						h='100%'
 						maxH='250px'
 						objectPosition='right'
+						alt='Imagen referente a Network y Conectividad'
 						src='/assets/img/servicios-lan.png'
 					/>
 				</Stack>
@@ -166,6 +167,7 @@ const Servicios = () => {
 					<Image
 						objectFit='cover'
 						h='100%'
+						alt='Imagen referente a Telefonía IP y Comunicaciones Unificadas'
 						src='/assets/img/servicios-tel.png'
 					/>
 				</Stack>
@@ -237,6 +239,7 @@ const Servicios = () => {
 					<Image
 						objectFit='cover'
 						h='100%'
+						alt="Imagen referente a Soluciones de Omnicanalidad"
 						src='/assets/img/servicios-omni.png'
 					/>
 				</Stack>
@@ -317,6 +320,7 @@ const Servicios = () => {
 					<Image
 						objectFit='cover'
 						h='100%'
+						alt="Imagen referente a Cyberseguridad"
 						src='/assets/img/servicios-cyber.png'
 					/>
 				</Stack>
@@ -394,6 +398,7 @@ const Servicios = () => {
 				>
 					<Image
 						objectFit='cover'
+						alt="Imagen referente a Infraestructura IT"
 						h='100%'
 						src='/assets/img/servicios-mantenimiento.png'
 					/>
@@ -471,6 +476,7 @@ const Servicios = () => {
 				>
 					<Image
 						objectFit='cover'
+						alt="Imagen referente a Modernización de Sistemas"
 						h='100%'
 						src='/assets/img/servicios-modernizacion.png'
 					/>
@@ -547,11 +553,7 @@ const Servicios = () => {
 					w={isMobile ? '100%' : '40%'}
 					overflow='hidden'
 				>
-					<Image
-						objectFit='cover'
-						h='100%'
-						src='/assets/img/soporte.png'
-					/>
+					<Image objectFit='cover' h='100%' src='/assets/img/soporte.png' alt="Imagen referente a Soporte Operativo IT"/>
 				</Stack>
 			</Stack>
 			<Stack
@@ -624,11 +626,7 @@ const Servicios = () => {
 					w={isMobile ? '100%' : '40%'}
 					overflow='hidden'
 				>
-					<Image
-						objectFit='cover'
-						h='100%'
-						src='/assets/img/video.png'
-					/>
+					<Image objectFit='cover' h='100%' src='/assets/img/video.png' alt="Imagen referente a Videovigilancia Profesional"/>
 				</Stack>
 			</Stack>
 		</Section>

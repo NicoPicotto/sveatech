@@ -139,6 +139,7 @@ const Servicios = () => {
 							<Image
 								objectFit='cover'
 								h='100%'
+								alt='Imagen referente a networking y Conectividad'
 								objectPosition='right'
 								src='/assets/img/servicios-lan.png'
 							/>
@@ -210,6 +211,7 @@ const Servicios = () => {
 						>
 							<Image
 								objectFit='cover'
+								alt='Imagen referente a Telefonía IP y Comunicaciones Unificadas'
 								h='100%'
 								src='/assets/img/servicios-tel.png'
 							/>
@@ -283,6 +285,7 @@ const Servicios = () => {
 						>
 							<Image
 								objectFit='cover'
+								alt='Imagen referente a Soluciones de Omnicanalidad'
 								h='100%'
 								src='/assets/img/servicios-omni.png'
 							/>
@@ -366,6 +369,7 @@ const Servicios = () => {
 						>
 							<Image
 								objectFit='cover'
+								alt='Imagen referente a Cyberseguridad'
 								h='100%'
 								src='/assets/img/servicios-cyber.png'
 							/>
@@ -447,6 +451,7 @@ const Servicios = () => {
 							<Image
 								objectFit='cover'
 								h='100%'
+								alt='Imagen referente a Infraestructura IT'
 								src='/assets/img/servicios-mantenimiento.png'
 							/>
 						</Stack>
@@ -526,6 +531,7 @@ const Servicios = () => {
 							<Image
 								objectFit='cover'
 								h='100%'
+								alt='Imagen referente a Modernización de Sistemas'
 								src='/assets/img/servicios-modernizacion.png'
 							/>
 						</Stack>
@@ -605,6 +611,7 @@ const Servicios = () => {
 						>
 							<Image
 								objectFit='cover'
+								alt='Imagen referente a Soporte Operativo IT'
 								h='100%'
 								src='/assets/img/soporte.png'
 							/>
@@ -685,6 +692,7 @@ const Servicios = () => {
 							<Image
 								objectFit='cover'
 								h='100%'
+								alt='Imagen referente a Videovigilancia Profesional'
 								src='/assets/img/video.png'
 							/>
 						</Stack>
