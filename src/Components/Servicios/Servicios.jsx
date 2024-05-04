@@ -95,7 +95,6 @@ const Servicios = () => {
 					<Image
 						objectFit='cover'
 						h='100%'
-						maxH='250px'
 						objectPosition='right'
 						alt='Imagen referente a Network y Conectividad'
 						src='/assets/img/servicios-lan.png'
@@ -239,7 +238,7 @@ const Servicios = () => {
 					<Image
 						objectFit='cover'
 						h='100%'
-						alt="Imagen referente a Soluciones de Omnicanalidad"
+						alt='Imagen referente a Soluciones de Omnicanalidad'
 						src='/assets/img/servicios-omni.png'
 					/>
 				</Stack>
@@ -320,7 +319,7 @@ const Servicios = () => {
 					<Image
 						objectFit='cover'
 						h='100%'
-						alt="Imagen referente a Cyberseguridad"
+						alt='Imagen referente a Cyberseguridad'
 						src='/assets/img/servicios-cyber.png'
 					/>
 				</Stack>
@@ -398,7 +397,7 @@ const Servicios = () => {
 				>
 					<Image
 						objectFit='cover'
-						alt="Imagen referente a Infraestructura IT"
+						alt='Imagen referente a Infraestructura IT'
 						h='100%'
 						src='/assets/img/servicios-mantenimiento.png'
 					/>
@@ -476,7 +475,7 @@ const Servicios = () => {
 				>
 					<Image
 						objectFit='cover'
-						alt="Imagen referente a Modernización de Sistemas"
+						alt='Imagen referente a Modernización de Sistemas'
 						h='100%'
 						src='/assets/img/servicios-modernizacion.png'
 					/>
@@ -544,7 +543,7 @@ const Servicios = () => {
 							w='fit-content'
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
-							Ver más
+							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
@@ -553,7 +552,12 @@ const Servicios = () => {
 					w={isMobile ? '100%' : '40%'}
 					overflow='hidden'
 				>
-					<Image objectFit='cover' h='100%' src='/assets/img/soporte.png' alt="Imagen referente a Soporte Operativo IT"/>
+					<Image
+						objectFit='cover'
+						h='100%'
+						src='/assets/img/soporte.png'
+						alt='Imagen referente a Soporte Operativo IT'
+					/>
 				</Stack>
 			</Stack>
 			<Stack
@@ -617,7 +621,7 @@ const Servicios = () => {
 							w='fit-content'
 							rightIcon={<ArrowRightIcon style={{ height: '15px' }} />}
 						>
-							Ver más
+							Contactar por este servicio
 						</Button>
 					</Link>
 				</Stack>
@@ -626,7 +630,12 @@ const Servicios = () => {
 					w={isMobile ? '100%' : '40%'}
 					overflow='hidden'
 				>
-					<Image objectFit='cover' h='100%' src='/assets/img/video.png' alt="Imagen referente a Videovigilancia Profesional"/>
+					<Image
+						objectFit='cover'
+						h='100%'
+						src='/assets/img/video.png'
+						alt='Imagen referente a Videovigilancia Profesional'
+					/>
 				</Stack>
 			</Stack>
 		</Section>
